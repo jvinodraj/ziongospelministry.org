@@ -1,0 +1,6 @@
+{
+  "environment": "dev",
+  "region": "ap-south-dev",
+  "baseUrl": "https://dev.example.ziongospelministry.org",
+  "notes": "Set matching GitHub Environment variables in repo settings."
+}

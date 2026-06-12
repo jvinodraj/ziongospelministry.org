@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Zion Gospel Ministry</title>
+  <meta name="description" content="Contact Zion Gospel Ministry for prayer, service details, visitor support, and ministry information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="cross-mark"></span><span class="brand-name">Zion Gospel Ministry</span></a>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="bible-studies.html">Bible Studies</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="events.html">Events</a>
+        <a href="missions.html">Missions</a>
+        <a href="prayer.html">Prayer</a>
+        <a href="resources.html">Resources</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <div class="top-actions"><button class="theme-btn" type="button" data-theme-toggle>Dark Mode</button></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="card reveal" id="visit">
+        <h1>Contact & Visit</h1>
+        <p class="muted">We would be honored to welcome you and pray with you.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Service Information</h3>
+            <p>Sunday Worship: 9:30 AM</p>
+            <p>Prayer Meeting: Friday 7:00 PM</p>
+            <p>Bible Study: Wednesday 7:00 PM</p>
+            <p>Youth Meeting: Saturday 5:00 PM</p>
+            <h3>Location</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+            <p><a href="https://share.google/jJkbszkjGaFDmpIht" target="_blank" rel="noopener">Open in Google Maps</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Message Us</h3>
+            <form data-generic-form>
+              <div class="form-grid">
+                <label>Name<input name="name" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Subject<input name="subject"></label>
+                <label>Message<textarea name="message" required></textarea></label>
+              </div>
+              <div class="hero-cta"><button class="btn" type="submit">Send Message</button></div>
+              <p class="muted" data-form-message></p>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="small-groups">
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Small Group Registration</h3>
+            <form data-generic-form>
+              <div class="form-grid">
+                <label>Name<input name="name" required></label>
+                <label>Preferred Area<input name="area"></label>
+                <label>Phone<input name="phone"></label>
+                <label>Comments<textarea name="message"></textarea></label>
+              </div>
+              <div class="hero-cta"><button class="btn" type="submit">Register Interest</button></div>
+              <p class="muted" data-form-message></p>
+            </form>
+          </article>
+
+          <article class="card" id="volunteer">
+            <h3>Volunteer Signup</h3>
+            <form data-generic-form>
+              <div class="form-grid">
+                <label>Name<input name="name" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Ministry Interest<select name="ministry"><option>Children</option><option>Youth</option><option>Worship</option><option>Outreach</option><option>Prayer Team</option></select></label>
+                <label>Notes<textarea name="message"></textarea></label>
+              </div>
+              <div class="hero-cta"><button class="btn" type="submit">Join Team</button></div>
+              <p class="muted" data-form-message></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><p><span id="year"></span> Zion Gospel Ministry</p></div></footer>
+</body>
+</html>

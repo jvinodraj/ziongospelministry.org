@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Sunday Worship Celebration",
+    "date": "2026-06-14",
+    "time": "09:30 AM",
+    "location": "Main Sanctuary",
+    "category": "Worship"
+  },
+  {
+    "title": "Grace Bible Study Night",
+    "date": "2026-06-17",
+    "time": "07:00 PM",
+    "location": "Study Hall",
+    "category": "Bible Study"
+  },
+  {
+    "title": "Youth Fellowship Gathering",
+    "date": "2026-06-20",
+    "time": "05:00 PM",
+    "location": "Youth Center",
+    "category": "Youth"
+  },
+  {
+    "title": "Prayer and Fasting Service",
+    "date": "2026-06-26",
+    "time": "07:00 PM",
+    "location": "Prayer Hall",
+    "category": "Prayer"
+  },
+  {
+    "title": "Family Retreat",
+    "date": "2026-07-04",
+    "time": "09:00 AM",
+    "location": "Retreat Campus",
+    "category": "Retreat"
+  },
+  {
+    "title": "Missions Awareness Sunday",
+    "date": "2026-07-12",
+    "time": "10:00 AM",
+    "location": "Main Sanctuary",
+    "category": "Missions"
+  }
+]

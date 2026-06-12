@@ -1,0 +1,153 @@
+name: staged-release
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      deploy_prod:
+        description: "Deploy to production after dev checks"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate site structure and local references
+        run: python tools/validate_site.py
+
+  package:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-bundle
+          path: |
+            *.html
+            assets/**
+            bible-data/**
+            manifest.webmanifest
+            sw.js
+          if-no-files-found: error
+
+  deploy_dev:
+    runs-on: ubuntu-latest
+    needs: package
+    environment: dev
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-bundle
+          path: dist
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Deploy to dev
+        env:
+          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
+          DEPLOY_REGION: ${{ vars.DEPLOY_REGION }}
+          BASE_URL: ${{ vars.BASE_URL }}
+        run: |
+          python tools/deploy_static.py \
+            --environment dev \
+            --region "${DEPLOY_REGION}" \
+            --artifact-path dist \
+            --manifest-path deploy/pages-manifest.json \
+            --base-url "${BASE_URL}" \
+            --webhook-url "${DEPLOY_WEBHOOK_URL}"
+
+  smoke_dev:
+    runs-on: ubuntu-latest
+    needs: deploy_dev
+    environment: dev
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Smoke test dev endpoint
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
+        run: python tools/smoke_check.py --base-url "${BASE_URL}" --label dev
+
+  deploy_prod:
+    runs-on: ubuntu-latest
+    needs: smoke_dev
+    if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_prod == 'true' }}
+    environment: prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-bundle
+          path: dist
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Deploy to prod
+        env:
+          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
+          DEPLOY_REGION: ${{ vars.DEPLOY_REGION }}
+          BASE_URL: ${{ vars.BASE_URL }}
+        run: |
+          python tools/deploy_static.py \
+            --environment prod \
+            --region "${DEPLOY_REGION}" \
+            --artifact-path dist \
+            --manifest-path deploy/pages-manifest.json \
+            --base-url "${BASE_URL}" \
+            --webhook-url "${DEPLOY_WEBHOOK_URL}"
+
+  smoke_prod:
+    runs-on: ubuntu-latest
+    needs: deploy_prod
+    environment: prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Smoke test prod endpoint
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
+        run: python tools/smoke_check.py --base-url "${BASE_URL}" --label prod

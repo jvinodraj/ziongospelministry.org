@@ -1,0 +1,14 @@
+{
+  "common": [
+    "assets/**/*",
+    "bible-data/**/*",
+    "manifest.webmanifest",
+    "sw.js"
+  ],
+  "dev": [
+    "*.html"
+  ],
+  "prod": [
+    "index.html"
+  ]
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sermons | Zion Gospel Ministry</title>
+  <meta name="description" content="Watch and listen to sermons from Zion Gospel Ministry. Search by speaker, topic, Bible passage, and date.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="cross-mark"></span><span class="brand-name">Zion Gospel Ministry</span></a>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a><a href="about.html">About Us</a><a class="active" href="sermons.html">Sermons</a><a href="bible-studies.html">Bible Studies</a><a href="ministries.html">Ministries</a><a href="events.html">Events</a><a href="missions.html">Missions</a><a href="prayer.html">Prayer</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="top-actions"><button class="theme-btn" type="button" data-theme-toggle>Dark Mode</button></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <div class="container">
+      <section class="card reveal">
+        <span class="pill">Sermon Library</span>
+        <h1>Sermons</h1>
+        <p class="muted">Explore video sermons, audio messages, and downloadable notes to help you grow in Christ.</p>
+      </section>
+      <section class="section reveal">
+        <div class="filters" data-sermon-filters>
+          <input type="search" data-sermon-search placeholder="Search title or keyword">
+          <select data-sermon-speaker><option value="">All speakers</option></select>
+          <select data-sermon-topic><option value="">All topics</option></select>
+          <input type="text" data-sermon-passage placeholder="Bible passage (e.g., Romans 5)">
+          <input type="month" data-sermon-month>
+        </div>
+        <div class="grid grid-3" data-sermon-list></div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><div class="container"><p><span id="year"></span> Zion Gospel Ministry</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Neighborhood Care Outreach",
+    "focus": "Local Outreach",
+    "description": "Food support, prayer visits, and Gospel encouragement to families in need."
+  },
+  {
+    "name": "Village Gospel Partnership",
+    "focus": "Mission Partner",
+    "description": "Supporting pastors and house fellowships through discipleship and resources."
+  },
+  {
+    "name": "Student Hope Project",
+    "focus": "Youth Mission",
+    "description": "Mentoring and educational support with biblical values for students."
+  }
+]

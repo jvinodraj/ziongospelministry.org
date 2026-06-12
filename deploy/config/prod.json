@@ -1,0 +1,6 @@
+{
+  "environment": "prod",
+  "region": "ap-south-prod",
+  "baseUrl": "https://ziongospelministry.org",
+  "notes": "Protect this environment with required reviewers before approval."
+}

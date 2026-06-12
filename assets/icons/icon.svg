@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Zion Gospel Ministry Icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3f6f98"/>
+      <stop offset="100%" stop-color="#c79a4a"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#g)"/>
+  <path d="M127 60v132M87 104h80" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+</svg>
