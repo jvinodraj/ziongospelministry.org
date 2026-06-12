@@ -14,6 +14,8 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
   validate:
@@ -43,6 +45,7 @@ jobs:
           name: site-bundle
           path: |
             *.html
+            CNAME
             assets/**
             bible-data/**
             manifest.webmanifest
@@ -109,6 +112,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Download site artifact
         uses: actions/download-artifact@v4
         with:
@@ -120,9 +126,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Deploy to prod
+      - name: Build prod release bundle from allowlist
         env:
-          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
           DEPLOY_REGION: ${{ vars.DEPLOY_REGION }}
           BASE_URL: ${{ vars.BASE_URL }}
         run: |
@@ -131,8 +136,15 @@ jobs:
             --region "${DEPLOY_REGION}" \
             --artifact-path dist \
             --manifest-path deploy/pages-manifest.json \
-            --base-url "${BASE_URL}" \
-            --webhook-url "${DEPLOY_WEBHOOK_URL}"
+            --base-url "${BASE_URL}"
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-prod-release
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
 
   smoke_prod:
     runs-on: ubuntu-latest
