@@ -75,10 +75,75 @@ function setFormMessage(form, msg) {
 
 function initSimpleForms() {
   bySelAll("form[data-generic-form], form[data-newsletter-form], form[data-prayer-form], form[data-testimony-form], form[data-member-login]").forEach((form) => {
+    if (form.hasAttribute("data-email-submit")) return;
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       setFormMessage(form, "Thank you. Your submission has been received.");
       form.reset();
+    });
+  });
+}
+
+function resolveApiEndpoint(form) {
+  const action = String(form.getAttribute("action") || "").trim();
+  if (/^https?:\/\//i.test(action)) return action;
+
+  const host = window.location.hostname;
+  const isLocal = host === "localhost" || host === "127.0.0.1";
+  const devBase = String(form.getAttribute("data-api-dev") || "").trim();
+  const prodBase = String(form.getAttribute("data-api-prod") || "").trim();
+  const envBase = isLocal ? devBase : prodBase;
+
+  if (!envBase) return action;
+  return new URL(action, envBase.endsWith("/") ? envBase : `${envBase}/`).toString();
+}
+
+function initEmailApiForms() {
+  bySelAll("form[data-email-submit]").forEach((form) => {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const submitBtn = bySel('button[type="submit"]', form);
+      const originalBtnText = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
+
+      const fd = new FormData(form);
+      const payload = {
+        name: String(fd.get("name") || "").trim(),
+        email: String(fd.get("email") || "").trim(),
+        subject: String(fd.get("subject") || "").trim(),
+        message: String(fd.get("message") || "").trim()
+      };
+      const endpoint = resolveApiEndpoint(form);
+
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          throw new Error("Failed to submit message.");
+        }
+
+        setFormMessage(form, "Thank you. Your message has been sent.");
+        form.reset();
+      } catch (_err) {
+        setFormMessage(form, "Unable to send right now. Please try again shortly.");
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      }
     });
   });
 }
@@ -546,6 +611,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initReveal();
   initSimpleForms();
+  initEmailApiForms();
   initMemoryTracker();
   bootData();
   registerServiceWorker();

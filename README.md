@@ -106,3 +106,45 @@ You can run the workflow manually and decide whether to continue to production u
 
 - Form submissions are currently local/static stubs. Connect real form endpoints (Formspree, Getform, custom backend) before production.
 - Member portal is currently a prototype UI and requires secure backend authentication for production use.
+
+## Contact Form API (Backend)
+
+The Message Us form is now wired to a backend endpoint: `/api/contact`.
+
+### Files
+
+- `api/server.js`: Express + Nodemailer API.
+- `api/.env.example`: Required environment variables.
+- `api/package.json`: API dependencies and scripts.
+
+### Local Run
+
+1. Install API dependencies:
+	- `cd api`
+	- `npm install`
+2. Create `.env` from `.env.example` and fill SMTP credentials.
+3. Start API:
+	- `npm start`
+4. Serve website and API behind the same host/reverse proxy, or use an absolute API URL in the form `action`.
+
+### Production Notes
+
+- GitHub Pages cannot run server-side code directly.
+- Deploy the `api` folder to a backend host (Render, Railway, Fly.io, Azure, etc.).
+- If backend is on another domain, update CORS `ALLOWED_ORIGINS` in API config.
+- Point form `action` to your deployed API URL (for example: `https://your-api-domain.com/api/contact`).
+
+### Environment-based API Routing
+
+The contact form supports separate API base URLs by environment:
+
+- `data-api-dev`: used on `localhost` or `127.0.0.1`
+- `data-api-prod`: used on all other hosts
+
+Current form configuration in `contact.html`:
+
+- `data-api-dev="http://127.0.0.1:8787"`
+- `data-api-prod="https://api.ziongospelministry.org"`
+- `action="/api/contact"`
+
+This means the same HTML works in both environments without manual form action edits.
