@@ -1,26 +1,1462 @@
 [
   {
-    "text": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.",
-    "reference": "Ephesians 2:8"
+    "text": "Fear not, thou worm Jacob, and ye men of Israel; I will help thee, saith the LORD, and thy redeemer, the Holy One of Israel.",
+    "reference": "Isaiah 41:14"
   },
   {
-    "text": "Now the God of hope fill you with all joy and peace in believing.",
-    "reference": "Romans 15:13"
+    "text": "I will greatly rejoice in the LORD, my soul shall be joyful in my God; for he hath clothed me with the garments of salvation, he hath covered me with the robe of righteousness, as a bridegroom decketh himself with ornaments, and as a bride adorneth herself with her jewels.",
+    "reference": "Isaiah 61:10"
   },
   {
-    "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God.",
+    "text": "Through faith also Sara herself received strength to conceive seed, and was delivered of a child when she was past age, because she judged him faithful who had promised.",
+    "reference": "Hebrews 11:11"
+  },
+  {
+    "text": "Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord hath promised to them that love him.",
+    "reference": "James 1:12"
+  },
+  {
+    "text": "And I will restore thy judges as at the first, and thy counsellors as at the beginning: afterward thou shalt be called, The city of righteousness, the faithful city.",
+    "reference": "Isaiah 1:26"
+  },
+  {
+    "text": "For I will pour water upon him that is thirsty, and floods upon the dry ground: I will pour my spirit upon thy seed, and my blessing upon thine offspring:",
+    "reference": "Isaiah 44:3"
+  },
+  {
+    "text": "I bring near my righteousness; it shall not be far off, and my salvation shall not tarry: and I will place salvation in Zion for Israel my glory.",
+    "reference": "Isaiah 46:13"
+  },
+  {
+    "text": "I have seen his ways, and will heal him: I will lead him also, and restore comforts unto him and to his mourners.",
+    "reference": "Isaiah 57:18"
+  },
+  {
+    "text": "Behold, I will bring it health and cure, and I will cure them, and will reveal unto them the abundance of peace and truth.",
+    "reference": "Jeremiah 33:6"
+  },
+  {
+    "text": "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,",
+    "reference": "Ephesians 1:18"
+  },
+  {
+    "text": "For thou, LORD, wilt bless the righteous; with favour wilt thou compass him as with a shield.",
+    "reference": "Psalms 5:12"
+  },
+  {
+    "text": "The LORD is my rock, and my fortress, and my deliverer; my God, my strength, in whom I will trust; my buckler, and the horn of my salvation, and my high tower.",
+    "reference": "Psalms 18:2"
+  },
+  {
+    "text": "The king shall joy in thy strength, O LORD; and in thy salvation how greatly shall he rejoice!",
+    "reference": "Psalms 21:1"
+  },
+  {
+    "text": "He shall receive the blessing from the LORD, and righteousness from the God of his salvation.",
+    "reference": "Psalms 24:5"
+  },
+  {
+    "text": "The LORD is my strength and my shield; my heart trusted in him, and I am helped: therefore my heart greatly rejoiceth; and with my song will I praise him.",
+    "reference": "Psalms 28:7"
+  },
+  {
+    "text": "Blessed is the nation whose God is the LORD; and the people whom he hath chosen for his own inheritance.",
+    "reference": "Psalms 33:12"
+  },
+  {
+    "text": "But the meek shall inherit the earth; and shall delight themselves in the abundance of peace.",
+    "reference": "Psalms 37:11"
+  },
+  {
+    "text": "Thou art fairer than the children of men: grace is poured into thy lips: therefore God hath blessed thee for ever.",
+    "reference": "Psalms 45:2"
+  },
+  {
+    "text": "In God is my salvation and my glory: the rock of my strength, and my refuge, is in God.",
+    "reference": "Psalms 62:7"
+  },
+  {
+    "text": "Blessed is the people that know the joyful sound: they shall walk, O LORD, in the light of thy countenance.",
+    "reference": "Psalms 89:15"
+  },
+  {
+    "text": "That I may see the good of thy chosen, that I may rejoice in the gladness of thy nation, that I may glory with thine inheritance.",
+    "reference": "Psalms 106:5"
+  },
+  {
+    "text": "Blessed be the LORD God of Israel from everlasting to everlasting: and let all the people say, Amen. Praise ye the LORD.",
+    "reference": "Psalms 106:48"
+  },
+  {
+    "text": "As he loved cursing, so let it come unto him: as he delighted not in blessing, so let it be far from him.",
+    "reference": "Psalms 109:17"
+  },
+  {
+    "text": "Praise ye the LORD. Blessed is the man that feareth the LORD, that delighteth greatly in his commandments.",
+    "reference": "Psalms 112:1"
+  },
+  {
+    "text": "An inheritance may be gotten hastily at the beginning; but the end thereof shall not be blessed.",
+    "reference": "Proverbs 20:21"
+  },
+  {
+    "text": "Whom the LORD of hosts shall bless, saying, Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance.",
+    "reference": "Isaiah 19:25"
+  },
+  {
+    "text": "And he said, It is a light thing that thou shouldest be my servant to raise up the tribes of Jacob, and to restore the preserved of Israel: I will also give thee for a light to the Gentiles, that thou mayest be my salvation unto the end of the earth.",
+    "reference": "Isaiah 49:6"
+  },
+  {
+    "text": "Thus saith the LORD, In an acceptable time have I heard thee, and in a day of salvation have I helped thee: and I will preserve thee, and give thee for a covenant of the people, to establish the earth, to cause to inherit the desolate heritages;",
+    "reference": "Isaiah 49:8"
+  },
+  {
+    "text": "For Zion's sake will I not hold my peace, and for Jerusalem's sake I will not rest, until the righteousness thereof go forth as brightness, and the salvation thereof as a lamp that burneth.",
+    "reference": "Isaiah 62:1"
+  },
+  {
+    "text": "Moreover I will make a covenant of peace with them; it shall be an everlasting covenant with them: and I will place them, and multiply them, and will set my sanctuary in the midst of them for evermore.",
+    "reference": "Ezekiel 37:26"
+  },
+  {
+    "text": "Yet I will rejoice in the LORD, I will joy in the God of my salvation.",
+    "reference": "Habakkuk 3:18"
+  },
+  {
+    "text": "Bring ye all the tithes into the storehouse, that there may be meat in mine house, and prove me now herewith, saith the LORD of hosts, if I will not open you the windows of heaven, and pour you out a blessing, that there shall not be room enough to receive it.",
+    "reference": "Malachi 3:10"
+  },
+  {
+    "text": "Blessed are they which are persecuted for righteousness' sake: for theirs is the kingdom of heaven.",
+    "reference": "Matthew 5:10"
+  },
+  {
+    "text": "Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world:",
+    "reference": "Matthew 25:34"
+  },
+  {
+    "text": "To perform the mercy promised to our fathers, and to remember his holy covenant;",
+    "reference": "Luke 1:72"
+  },
+  {
+    "text": "Saying, Blessed be the King that cometh in the name of the Lord: peace in heaven, and glory in the highest.",
+    "reference": "Luke 19:38"
+  },
+  {
+    "text": "By whom also we have access by faith into this grace wherein we stand, and rejoice in hope of the glory of God.",
+    "reference": "Romans 5:2"
+  },
+  {
+    "text": "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost.",
+    "reference": "Romans 14:17"
+  },
+  {
+    "text": "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,",
+    "reference": "Galatians 5:22"
+  },
+  {
+    "text": "To the praise of the glory of his grace, wherein he hath made us accepted in the beloved.",
+    "reference": "Ephesians 1:6"
+  },
+  {
+    "text": "Which is the earnest of our inheritance until the redemption of the purchased possession, unto the praise of his glory.",
+    "reference": "Ephesians 1:14"
+  },
+  {
+    "text": "Now our Lord Jesus Christ himself, and God, even our Father, which hath loved us, and hath given us everlasting consolation and good hope through grace,",
+    "reference": "2 Thessalonians 2:16"
+  },
+  {
+    "text": "Now the God of peace, that brought again from the dead our Lord Jesus, that great shepherd of the sheep, through the blood of the everlasting covenant,",
+    "reference": "Hebrews 13:20"
+  },
+  {
+    "text": "Hearken, my beloved brethren, Hath not God chosen the poor of this world rich in faith, and heirs of the kingdom which he hath promised to them that love him?",
+    "reference": "James 2:5"
+  },
+  {
+    "text": "Whom having not seen, ye love; in whom, though now ye see him not, yet believing, ye rejoice with joy unspeakable and full of glory:",
+    "reference": "1 Peter 1:8"
+  },
+  {
+    "text": "I will praise the LORD according to his righteousness: and will sing praise to the name of the LORD most high.",
+    "reference": "Psalms 7:17"
+  },
+  {
+    "text": "I will be glad and rejoice in thee: I will sing praise to thy name, O thou most High.",
+    "reference": "Psalms 9:2"
+  },
+  {
+    "text": "I will love thee, O LORD, my strength.",
+    "reference": "Psalms 18:1"
+  },
+  {
+    "text": "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.",
+    "reference": "Psalms 23:6"
+  },
+  {
+    "text": "To the end that my glory may sing praise to thee, and not be silent. O LORD my God, I will give thanks unto thee for ever.",
+    "reference": "Psalms 30:12"
+  },
+  {
+    "text": "I will be glad and rejoice in thy mercy: for thou hast considered my trouble; thou hast known my soul in adversities;",
+    "reference": "Psalms 31:7"
+  },
+  {
+    "text": "I will bless the LORD at all times: his praise shall continually be in my mouth.",
+    "reference": "Psalms 34:1"
+  },
+  {
+    "text": "But I will hope continually, and will yet praise thee more and more.",
+    "reference": "Psalms 71:14"
+  },
+  {
+    "text": "I will go in the strength of the Lord GOD: I will make mention of thy righteousness, even of thine only.",
+    "reference": "Psalms 71:16"
+  },
+  {
+    "text": "Because he hath set his love upon me, therefore will I deliver him: I will set him on high, because he hath known my name.",
+    "reference": "Psalms 91:14"
+  },
+  {
+    "text": "O God, my heart is fixed; I will sing and give praise, even with my glory.",
+    "reference": "Psalms 108:1"
+  },
+  {
+    "text": "Open to me the gates of righteousness: I will go into them, and I will praise the LORD:",
+    "reference": "Psalms 118:19"
+  },
+  {
+    "text": "I will praise thee: for thou hast heard me, and art become my salvation.",
+    "reference": "Psalms 118:21"
+  },
+  {
+    "text": "And I will delight myself in thy commandments, which I have loved.",
+    "reference": "Psalms 119:47"
+  },
+  {
+    "text": "I will also clothe her priests with salvation: and her saints shall shout aloud for joy.",
+    "reference": "Psalms 132:16"
+  },
+  {
+    "text": "Every day will I bless thee; and I will praise thy name for ever and ever.",
+    "reference": "Psalms 145:2"
+  },
+  {
+    "text": "That I may cause those that love me to inherit substance; and I will fill their treasures.",
+    "reference": "Proverbs 8:21"
+  },
+  {
+    "text": "And in that day thou shalt say, O LORD, I will praise thee: though thou wast angry with me, thine anger is turned away, and thou comfortedst me.",
+    "reference": "Isaiah 12:1"
+  },
+  {
+    "text": "Behold, God is my salvation; I will trust, and not be afraid: for the LORD JEHOVAH is my strength and my song; he also is become my salvation.",
+    "reference": "Isaiah 12:2"
+  },
+  {
+    "text": "O Lord, thou art my God; I will exalt thee, I will praise thy name; for thou hast done wonderful things; thy counsels of old are faithfulness and truth.",
+    "reference": "Isaiah 25:1"
+  },
+  {
+    "text": "For I the LORD thy God will hold thy right hand, saying unto thee, Fear not; I will help thee.",
+    "reference": "Isaiah 41:13"
+  },
+  {
+    "text": "Fear not: for I am with thee: I will bring thy seed from the east, and gather thee from the west;",
+    "reference": "Isaiah 43:5"
+  },
+  {
+    "text": "Incline your ear, and come unto me: hear, and your soul shall live; and I will make an everlasting covenant with you, even the sure mercies of David.",
+    "reference": "Isaiah 55:3"
+  },
+  {
+    "text": "I create the fruit of the lips; Peace, peace to him that is far off, and to him that is near, saith the LORD; and I will heal him.",
+    "reference": "Isaiah 57:19"
+  },
+  {
+    "text": "And I will deliver thee out of the hand of the wicked, and I will redeem thee out of the hand of the terrible.",
+    "reference": "Jeremiah 15:21"
+  },
+  {
+    "text": "Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah:",
+    "reference": "Jeremiah 31:31"
+  },
+  {
+    "text": "Behold, the days come, saith the LORD, that I will perform that good thing which I have promised unto the house of Israel and to the house of Judah.",
+    "reference": "Jeremiah 33:14"
+  },
+  {
+    "text": "Nevertheless I will remember my covenant with thee in the days of thy youth, and I will establish unto thee an everlasting covenant.",
+    "reference": "Ezekiel 16:60"
+  },
+  {
+    "text": "And I will pour my fury upon Sin, the strength of Egypt; and I will cut off the multitude of No.",
+    "reference": "Ezekiel 30:15"
+  },
+  {
+    "text": "And at the end of the days I Nebuchadnezzar lifted up mine eyes unto heaven, and mine understanding returned unto me, and I blessed the most High, and I praised and honoured him that liveth for ever, whose dominion is an everlasting dominion, and his kingdom is from generation to generation:",
+    "reference": "Daniel 4:34"
+  },
+  {
+    "text": "And said, O man greatly beloved, fear not: peace be unto thee, be strong, yea, be strong. And when he had spoken unto me, I was strengthened, and said, Let my lord speak; for thou hast strengthened me.",
+    "reference": "Daniel 10:19"
+  },
+  {
+    "text": "But go ye and learn what that meaneth, I will have mercy, and not sacrifice: for I am not come to call the righteous, but sinners to repentance.",
+    "reference": "Matthew 9:13"
+  },
+  {
+    "text": "And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver.",
+    "reference": "Matthew 26:15"
+  },
+  {
+    "text": "And ye now therefore have sorrow: but I will see you again, and your heart shall rejoice, and your joy no man taketh from you.",
+    "reference": "John 16:22"
+  },
+  {
+    "text": "Saying, Surely blessing I will bless thee, and multiplying I will multiply thee.",
+    "reference": "Hebrews 6:14"
+  },
+  {
+    "text": "Wherefore Levi hath no part nor inheritance with his brethren; the LORD is his inheritance, according as the LORD thy God promised him.",
+    "reference": "Deuteronomy 10:9"
+  },
+  {
+    "text": "And David said unto him, Fear not: for I will surely shew thee kindness for Jonathan thy father's sake, and will restore thee all the land of Saul thy father; and thou shalt eat bread at my table continually.",
+    "reference": "2 Samuel 9:7"
+  },
+  {
+    "text": "Then I will establish the throne of thy kingdom upon Israel for ever, as I promised to David thy father, saying, There shall not fail thee a man upon the throne of Israel.",
+    "reference": "1 Kings 9:5"
+  },
+  {
+    "text": "Let them shout for joy, and be glad, that favour my righteous cause: yea, let them say continually, Let the LORD be magnified, which hath pleasure in the prosperity of his servant.",
+    "reference": "Psalms 35:27"
+  },
+  {
+    "text": "Then shall thy light break forth as the morning, and thine health shall spring forth speedily: and thy righteousness shall go before thee; the glory of the LORD shall be thy rereward.",
+    "reference": "Isaiah 58:8"
+  },
+  {
+    "text": "For I the LORD love judgment, I hate robbery for burnt offering; and I will direct their work in truth, and I will make an everlasting covenant with them.",
+    "reference": "Isaiah 61:8"
+  },
+  {
+    "text": "And it shall be to me a name of joy, a praise and an honour before all the nations of the earth, which shall hear all the good that I do unto them: and they shall fear and tremble for all the goodness and for all the prosperity that I procure unto it.",
+    "reference": "Jeremiah 33:9"
+  },
+  {
+    "text": "And he gave him none inheritance in it, no, not so much as to set his foot on: yet he promised that he would give it to him for a possession, and to his seed after him, when as yet he had no child.",
+    "reference": "Acts 7:5"
+  },
+  {
+    "text": "To Timothy, my dearly beloved son: Grace, mercy, and peace, from God the Father and Christ Jesus our Lord.",
+    "reference": "2 Timothy 1:2"
+  },
+  {
+    "text": "Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead,",
+    "reference": "1 Peter 1:3"
+  },
+  {
+    "text": "And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing:",
+    "reference": "Genesis 12:2"
+  },
+  {
+    "text": "And he said, I am God, the God of thy father: fear not to go down into Egypt; for I will there make of thee a great nation:",
+    "reference": "Genesis 46:3"
+  },
+  {
+    "text": "Then I will command my blessing upon you in the sixth year, and it shall bring forth fruit for three years.",
+    "reference": "Leviticus 25:21"
+  },
+  {
+    "text": "And now, my daughter, fear not; I will do to thee all that thou requirest: for all the city of my people doth know that thou art a virtuous woman.",
+    "reference": "Ruth 3:11"
+  },
+  {
+    "text": "Salvation belongeth unto the LORD: thy blessing is upon thy people. Selah.",
+    "reference": "Psalms 3:8"
+  },
+  {
+    "text": "But I have trusted in thy mercy; my heart shall rejoice in thy salvation.",
+    "reference": "Psalms 13:5"
+  },
+  {
+    "text": "Therefore my heart is glad, and my glory rejoiceth: my flesh also shall rest in hope.",
+    "reference": "Psalms 16:9"
+  },
+  {
+    "text": "The LORD liveth; and blessed be my rock; and let the God of my salvation be exalted.",
+    "reference": "Psalms 18:46"
+  },
+  {
+    "text": "Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD, my strength, and my redeemer.",
+    "reference": "Psalms 19:14"
+  },
+  {
+    "text": "For thou preventest him with the blessings of goodness: thou settest a crown of pure gold on his head.",
+    "reference": "Psalms 21:3"
+  },
+  {
+    "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+    "reference": "Psalms 27:1"
+  },
+  {
+    "text": "Save thy people, and bless thine inheritance: feed them also, and lift them up for ever.",
+    "reference": "Psalms 28:9"
+  },
+  {
+    "text": "The LORD will give strength unto his people; the LORD will bless his people with peace.",
+    "reference": "Psalms 29:11"
+  },
+  {
+    "text": "Be glad in the LORD, and rejoice, ye righteous: and shout for joy, all ye that are upright in heart.",
+    "reference": "Psalms 32:11"
+  },
+  {
+    "text": "Rejoice in the LORD, O ye righteous: for praise is comely for the upright.",
+    "reference": "Psalms 33:1"
+  },
+  {
+    "text": "And my soul shall be joyful in the LORD: it shall rejoice in his salvation.",
+    "reference": "Psalms 35:9"
+  },
+  {
+    "text": "But the salvation of the righteous is of the LORD: he is their strength in the time of trouble.",
+    "reference": "Psalms 37:39"
+  },
+  {
+    "text": "I have not hid thy righteousness within my heart; I have declared thy faithfulness and thy salvation: I have not concealed thy lovingkindness and thy truth from the great congregation.",
+    "reference": "Psalms 40:10"
+  },
+  {
+    "text": "Let all those that seek thee rejoice and be glad in thee: let such as love thy salvation say continually, The LORD be magnified.",
+    "reference": "Psalms 40:16"
+  },
+  {
+    "text": "Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.",
+    "reference": "Psalms 41:1"
+  },
+  {
+    "text": "Blessed be the LORD God of Israel from everlasting, and to everlasting. Amen, and Amen.",
+    "reference": "Psalms 41:13"
+  },
+  {
+    "text": "He shall choose our inheritance for us, the excellency of Jacob whom he loved. Selah.",
+    "reference": "Psalms 47:4"
+  },
+  {
+    "text": "Though while he lived he blessed his soul: and men will praise thee, when thou doest well to thyself.",
+    "reference": "Psalms 49:18"
+  },
+  {
+    "text": "Restore unto me the joy of thy salvation; and uphold me with thy free spirit.",
+    "reference": "Psalms 51:12"
+  },
+  {
+    "text": "Deliver me from bloodguiltiness, O God, thou God of my salvation: and my tongue shall sing aloud of thy righteousness.",
+    "reference": "Psalms 51:14"
+  },
+  {
+    "text": "But I will sing of thy power; yea, I will sing aloud of thy mercy in the morning: for thou hast been my defence and refuge in the day of my trouble.",
+    "reference": "Psalms 59:16"
+  },
+  {
+    "text": "Blessed be God, which hath not turned away my prayer, nor his mercy from me.",
+    "reference": "Psalms 66:20"
+  },
+  {
+    "text": "Blessed be the Lord, who daily loadeth us with benefits, even the God of our salvation. Selah.",
+    "reference": "Psalms 68:19"
+  },
+  {
+    "text": "O God, thou art terrible out of thy holy places: the God of Israel is he that giveth strength and power unto his people. Blessed be God.",
+    "reference": "Psalms 68:35"
+  },
+  {
+    "text": "Let all those that seek thee rejoice and be glad in thee: and let such as love thy salvation say continually, Let God be magnified.",
+    "reference": "Psalms 70:4"
+  },
+  {
+    "text": "In his days shall the righteous flourish; and abundance of peace so long as the moon endureth.",
+    "reference": "Psalms 72:7"
+  },
+  {
+    "text": "And blessed be his glorious name for ever: and let the whole earth be filled with his glory; Amen, and Amen.",
+    "reference": "Psalms 72:19"
+  },
+  {
+    "text": "Remember thy congregation, which thou hast purchased of old; the rod of thine inheritance, which thou hast redeemed; this mount Zion, wherein thou hast dwelt.",
+    "reference": "Psalms 74:2"
+  },
+  {
+    "text": "Help us, O God of our salvation, for the glory of thy name: and deliver us, and purge away our sins, for thy name's sake.",
+    "reference": "Psalms 79:9"
+  },
+  {
+    "text": "Blessed is the man whose strength is in thee; in whose heart are the ways of them.",
+    "reference": "Psalms 84:5"
+  },
+  {
+    "text": "For the LORD God is a sun and shield: the LORD will give grace and glory: no good thing will he withhold from them that walk uprightly.",
+    "reference": "Psalms 84:11"
+  },
+  {
+    "text": "Mercy and truth are met together; righteousness and peace have kissed each other.",
+    "reference": "Psalms 85:10"
+  },
+  {
+    "text": "For thou art the glory of their strength: and in thy favour our horn shall be exalted.",
+    "reference": "Psalms 89:17"
+  },
+  {
+    "text": "Make a joyful noise unto the LORD, all the earth: make a loud noise, and rejoice, and sing praise.",
+    "reference": "Psalms 98:4"
+  },
+  {
+    "text": "But the mercy of the LORD is from everlasting to everlasting upon them that fear him, and his righteousness unto children's children;",
+    "reference": "Psalms 103:17"
+  },
+  {
+    "text": "He sent his word, and healed them, and delivered them from their destructions.",
+    "reference": "Psalms 107:20"
+  },
+  {
+    "text": "Pray for the peace of Jerusalem: they shall prosper that love thee.",
+    "reference": "Psalms 122:6"
+  },
+  {
+    "text": "Blessed be the LORD out of Zion, which dwelleth at Jerusalem. Praise ye the LORD.",
+    "reference": "Psalms 135:21"
+  },
+  {
+    "text": "Blessed be the LORD my strength, which teacheth my hands to war, and my fingers to fight:",
+    "reference": "Psalms 144:1"
+  },
+  {
+    "text": "My goodness, and my fortress; my high tower, and my deliverer; my shield, and he in whom I trust; who subdueth my people under me.",
+    "reference": "Psalms 144:2"
+  },
+  {
+    "text": "For he hath strengthened the bars of thy gates; he hath blessed thy children within thee.",
+    "reference": "Psalms 147:13"
+  },
+  {
+    "text": "She shall give to thine head an ornament of grace: a crown of glory shall she deliver to thee.",
+    "reference": "Proverbs 4:9"
+  },
+  {
+    "text": "Let thy fountain be blessed: and rejoice with the wife of thy youth.",
+    "reference": "Proverbs 5:18"
+  },
+  {
+    "text": "The light of the righteous rejoiceth: but the lamp of the wicked shall be put out.",
+    "reference": "Proverbs 13:9"
+  },
+  {
+    "text": "Righteous lips are the delight of kings; and they love him that speaketh right.",
+    "reference": "Proverbs 16:13"
+  },
+  {
+    "text": "The father of the righteous shall greatly rejoice: and he that begetteth a wise child shall have joy of him.",
+    "reference": "Proverbs 23:24"
+  },
+  {
+    "text": "But to them that rebuke him shall be delight, and a good blessing shall come upon them.",
+    "reference": "Proverbs 24:25"
+  },
+  {
+    "text": "When righteous men do rejoice, there is great glory: but when the wicked rise, a man is hidden.",
+    "reference": "Proverbs 28:12"
+  },
+  {
+    "text": "A faithful man shall abound with blessings: but he that maketh haste to be rich shall not be innocent.",
+    "reference": "Proverbs 28:20"
+  },
+  {
+    "text": "Her children arise up, and call her blessed; her husband also, and he praiseth her.",
+    "reference": "Proverbs 31:28"
+  },
+  {
+    "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
     "reference": "Isaiah 41:10"
   },
   {
-    "text": "The steadfast love of the Lord never ceases; his mercies never come to an end.",
-    "reference": "Lamentations 3:22"
+    "text": "Sing, O heavens; and be joyful, O earth; and break forth into singing, O mountains: for the LORD hath comforted his people, and will have mercy upon his afflicted.",
+    "reference": "Isaiah 49:13"
   },
   {
-    "text": "And my God shall supply all your need according to his riches in glory by Christ Jesus.",
-    "reference": "Philippians 4:19"
+    "text": "And I will feed them that oppress thee with their own flesh; and they shall be drunken with their own blood, as with sweet wine: and all flesh shall know that I the LORD am thy Saviour and thy Redeemer, the mighty One of Jacob.",
+    "reference": "Isaiah 49:26"
   },
   {
-    "text": "The Lord is my shepherd; I shall not want.",
-    "reference": "Psalm 23:1"
+    "text": "Break forth into joy, sing together, ye waste places of Jerusalem: for the LORD hath comforted his people, he hath redeemed Jerusalem.",
+    "reference": "Isaiah 52:9"
+  },
+  {
+    "text": "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.",
+    "reference": "Isaiah 53:5"
+  },
+  {
+    "text": "For brass I will bring gold, and for iron I will bring silver, and for wood brass, and for stones iron: I will also make thy officers peace, and thine exactors righteousness.",
+    "reference": "Isaiah 60:17"
+  },
+  {
+    "text": "Thy people also shall be all righteous: they shall inherit the land for ever, the branch of my planting, the work of my hands, that I may be glorified.",
+    "reference": "Isaiah 60:21"
+  },
+  {
+    "text": "I will mention the lovingkindnesses of the LORD, and the praises of the LORD, according to all that the LORD hath bestowed on us, and the great goodness toward the house of Israel, which he hath bestowed on them according to his mercies, and according to the multitude of his lovingkindnesses.",
+    "reference": "Isaiah 63:7"
+  },
+  {
+    "text": "Doubtless thou art our father, though Abraham be ignorant of us, and Israel acknowledge us not: thou, O LORD, art our father, our redeemer; thy name is from everlasting.",
+    "reference": "Isaiah 63:16"
+  },
+  {
+    "text": "Rejoice ye with Jerusalem, and be glad with her, all ye that love her: rejoice for joy with her, all ye that mourn for her:",
+    "reference": "Isaiah 66:10"
+  },
+  {
+    "text": "That ye may suck, and be satisfied with the breasts of her consolations; that ye may milk out, and be delighted with the abundance of her glory.",
+    "reference": "Isaiah 66:11"
+  },
+  {
+    "text": "For thus saith the LORD, Behold, I will extend peace to her like a river, and the glory of the Gentiles like a flowing stream: then shall ye suck, ye shall be borne upon her sides, and be dandled upon her knees.",
+    "reference": "Isaiah 66:12"
+  },
+  {
+    "text": "Be not afraid of their faces: for I am with thee to deliver thee, saith the LORD.",
+    "reference": "Jeremiah 1:8"
+  },
+  {
+    "text": "Thus saith the LORD against all mine evil neighbours, that touch the inheritance which I have caused my people Israel to inherit; Behold, I will pluck them out of their land, and pluck out the house of Judah from among them.",
+    "reference": "Jeremiah 12:14"
+  },
+  {
+    "text": "Do not abhor us, for thy name's sake, do not disgrace the throne of thy glory: remember, break not thy covenant with us.",
+    "reference": "Jeremiah 14:21"
+  },
+  {
+    "text": "And first I will recompense their iniquity and their sin double; because they have defiled my land, they have filled mine inheritance with the carcases of their detestable and abominable things.",
+    "reference": "Jeremiah 16:18"
+  },
+  {
+    "text": "Blessed is the man that trusteth in the LORD, and whose hope the LORD is.",
+    "reference": "Jeremiah 17:7"
+  },
+  {
+    "text": "Heal me, O LORD, and I shall be healed; save me, and I shall be saved: for thou art my praise.",
+    "reference": "Jeremiah 17:14"
+  },
+  {
+    "text": "For I will restore health unto thee, and I will heal thee of thy wounds, saith the LORD; because they called thee an Outcast, saying, This is Zion, whom no man seeketh after.",
+    "reference": "Jeremiah 30:17"
+  },
+  {
+    "text": "And I will make an everlasting covenant with them, that I will not turn away from them, to do them good; but I will put my fear in their hearts, that they shall not depart from me.",
+    "reference": "Jeremiah 32:40"
+  },
+  {
+    "text": "Then the spirit took me up, and I heard behind me a voice of a great rushing, saying, Blessed be the glory of the LORD from his place.",
+    "reference": "Ezekiel 3:12"
+  },
+  {
+    "text": "Thus saith the Lord GOD; Behold, I am against the shepherds; and I will require my flock at their hand, and cause them to cease from feeding the flock; neither shall the shepherds feed themselves any more; for I will deliver my flock from their mouth, that they may not be meat for them.",
+    "reference": "Ezekiel 34:10"
+  },
+  {
+    "text": "And I will make with them a covenant of peace, and will cause the evil beasts to cease out of the land: and they shall dwell safely in the wilderness, and sleep in the woods.",
+    "reference": "Ezekiel 34:25"
+  },
+  {
+    "text": "And I will make them and the places round about my hill a blessing; and I will cause the shower to come down in his season; there shall be showers of blessing.",
+    "reference": "Ezekiel 34:26"
+  },
+  {
+    "text": "Yea, I will cause men to walk upon you, even my people Israel; and they shall possess thee, and thou shalt be their inheritance, and thou shalt no more henceforth bereave them of men.",
+    "reference": "Ezekiel 36:12"
+  },
+  {
+    "text": "I will heal their backsliding, I will love them freely: for mine anger is turned away from him.",
+    "reference": "Hosea 14:4"
+  },
+  {
+    "text": "Fear not, O land; be glad and rejoice: for the LORD will do great things.",
+    "reference": "Joel 2:21"
+  },
+  {
+    "text": "And I will strengthen the house of Judah, and I will save the house of Joseph, and I will bring them again to place them; for I have mercy upon them: and they shall be as though I had not cast them off: for I am the LORD their God, and will hear them.",
+    "reference": "Zechariah 10:6"
+  },
+  {
+    "text": "Whose possessors slay them, and hold themselves not guilty: and they that sell them say, Blessed be the LORD; for I am rich: and their own shepherds pity them not.",
+    "reference": "Zechariah 11:5"
+  },
+  {
+    "text": "For, lo, I will raise up a shepherd in the land, which shall not visit those that be cut off, neither shall seek the young one, nor heal that that is broken, nor feed that that standeth still: but he shall eat the flesh of the fat, and tear their claws in pieces.",
+    "reference": "Zechariah 11:16"
+  },
+  {
+    "text": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts.",
+    "reference": "Malachi 3:1"
+  },
+  {
+    "text": "And all nations shall call you blessed: for ye shall be a delightsome land, saith the LORD of hosts.",
+    "reference": "Malachi 3:12"
+  },
+  {
+    "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+    "reference": "Matthew 5:3"
+  },
+  {
+    "text": "Blessed are they that mourn: for they shall be comforted.",
+    "reference": "Matthew 5:4"
+  },
+  {
+    "text": "Blessed are the meek: for they shall inherit the earth.",
+    "reference": "Matthew 5:5"
+  },
+  {
+    "text": "Blessed are they which do hunger and thirst after righteousness: for they shall be filled.",
+    "reference": "Matthew 5:6"
+  },
+  {
+    "text": "Blessed are the merciful: for they shall obtain mercy.",
+    "reference": "Matthew 5:7"
+  },
+  {
+    "text": "Blessed are the peacemakers: for they shall be called the children of God.",
+    "reference": "Matthew 5:9"
+  },
+  {
+    "text": "And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen.",
+    "reference": "Matthew 6:13"
+  },
+  {
+    "text": "His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.",
+    "reference": "Matthew 25:21"
+  },
+  {
+    "text": "His lord said unto him, Well done, good and faithful servant; thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.",
+    "reference": "Matthew 25:23"
+  },
+  {
+    "text": "And the angel came in unto her, and said, Hail, thou that art highly favoured, the Lord is with thee: blessed art thou among women.",
+    "reference": "Luke 1:28"
+  },
+  {
+    "text": "And the angel said unto her, Fear not, Mary: for thou hast found favour with God.",
+    "reference": "Luke 1:30"
+  },
+  {
+    "text": "Blessed be the Lord God of Israel; for he hath visited and redeemed his people,",
+    "reference": "Luke 1:68"
+  },
+  {
+    "text": "And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.",
+    "reference": "Luke 2:10"
+  },
+  {
+    "text": "And the devil said unto him, All this power will I give thee, and the glory of them: for that is delivered unto me; and to whomsoever I will I give it.",
+    "reference": "Luke 4:6"
+  },
+  {
+    "text": "And he lifted up his eyes on his disciples, and said, Blessed be ye poor: for yours is the kingdom of God.",
+    "reference": "Luke 6:20"
+  },
+  {
+    "text": "And the people, when they knew it, followed him: and he received them, and spake unto them of the kingdom of God, and healed them that had need of healing.",
+    "reference": "Luke 9:11"
+  },
+  {
+    "text": "Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.",
+    "reference": "Luke 12:32"
+  },
+  {
+    "text": "And they held their peace. And he took him, and healed him, and let him go;",
+    "reference": "Luke 14:4"
+  },
+  {
+    "text": "And when one of them that sat at meat with him heard these things, he said unto him, Blessed is he that shall eat bread in the kingdom of God.",
+    "reference": "Luke 14:15"
+  },
+  {
+    "text": "Took branches of palm trees, and went forth to meet him, and cried, Hosanna: Blessed is the King of Israel that cometh in the name of the Lord.",
+    "reference": "John 12:13"
+  },
+  {
+    "text": "Father, I will that they also, whom thou hast given me, be with me where I am; that they may behold my glory, which thou hast given me: for thou lovedst me before the foundation of the world.",
+    "reference": "John 17:24"
+  },
+  {
+    "text": "Then spake the Lord to Paul in the night by a vision, Be not afraid, but speak, and hold not thy peace:",
+    "reference": "Acts 18:9"
+  },
+  {
+    "text": "To all that be in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father, and the Lord Jesus Christ.",
+    "reference": "Romans 1:7"
+  },
+  {
+    "text": "Even as David also describeth the blessedness of the man, unto whom God imputeth righteousness without works,",
+    "reference": "Romans 4:6"
+  },
+  {
+    "text": "Cometh this blessedness then upon the circumcision only, or upon the uncircumcision also? for we say that faith was reckoned to Abraham for righteousness.",
+    "reference": "Romans 4:9"
+  },
+  {
+    "text": "Who are Israelites; to whom pertaineth the adoption, and the glory, and the covenants, and the giving of the law, and the service of God, and the promises;",
+    "reference": "Romans 9:4"
+  },
+  {
+    "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+    "reference": "Romans 15:13"
+  },
+  {
+    "text": "Know ye not that the unrighteous shall not inherit the kingdom of God? Be not deceived: neither fornicators, nor idolaters, nor adulterers, nor effeminate, nor abusers of themselves with mankind,",
+    "reference": "1 Corinthians 6:9"
+  },
+  {
+    "text": "Blessed be God, even the Father of our Lord Jesus Christ, the Father of mercies, and the God of all comfort;",
+    "reference": "2 Corinthians 1:3"
+  },
+  {
+    "text": "Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you.",
+    "reference": "2 Corinthians 13:11"
+  },
+  {
+    "text": "So then they which be of faith are blessed with faithful Abraham.",
+    "reference": "Galatians 3:9"
+  },
+  {
+    "text": "That the blessing of Abraham might come on the Gentiles through Jesus Christ; that we might receive the promise of the Spirit through faith.",
+    "reference": "Galatians 3:14"
+  },
+  {
+    "text": "For if the inheritance be of the law, it is no more of promise: but God gave it to Abraham by promise.",
+    "reference": "Galatians 3:18"
+  },
+  {
+    "text": "Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ:",
+    "reference": "Ephesians 1:3"
+  },
+  {
+    "text": "For this ye know, that no whoremonger, nor unclean person, nor covetous man, who is an idolater, hath any inheritance in the kingdom of Christ and of God.",
+    "reference": "Ephesians 5:5"
+  },
+  {
+    "text": "Being filled with the fruits of righteousness, which are by Jesus Christ, unto the glory and praise of God.",
+    "reference": "Philippians 1:11"
+  },
+  {
+    "text": "To the saints and faithful brethren in Christ which are at Colosse: Grace be unto you, and peace, from God our Father and the Lord Jesus Christ.",
+    "reference": "Colossians 1:2"
+  },
+  {
+    "text": "Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance of the saints in light:",
+    "reference": "Colossians 1:12"
+  },
+  {
+    "text": "But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.",
+    "reference": "1 Thessalonians 5:8"
+  },
+  {
+    "text": "But he whose descent is not counted from them received tithes of Abraham, and blessed him that had the promises.",
+    "reference": "Hebrews 7:6"
+  },
+  {
+    "text": "For finding fault with them, he saith, Behold, the days come, saith the Lord, when I will make a new covenant with the house of Israel and with the house of Judah:",
+    "reference": "Hebrews 8:8"
+  },
+  {
+    "text": "Let us hold fast the profession of our faith without wavering; (for he is faithful that promised;)",
+    "reference": "Hebrews 10:23"
+  },
+  {
+    "text": "Who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions,",
+    "reference": "Hebrews 11:33"
+  },
+  {
+    "text": "Now no chastening for the present seemeth to be joyous, but grievous: nevertheless afterward it yieldeth the peaceable fruit of righteousness unto them which are exercised thereby.",
+    "reference": "Hebrews 12:11"
+  },
+  {
+    "text": "For ye know how that afterward, when he would have inherited the blessing, he was rejected: for he found no place of repentance, though he sought it carefully with tears.",
+    "reference": "Hebrews 12:17"
+  },
+  {
+    "text": "Confess your faults one to another, and pray one for another, that ye may be healed. The effectual fervent prayer of a righteous man availeth much.",
+    "reference": "James 5:16"
+  },
+  {
+    "text": "Who his own self bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness: by whose stripes ye were healed.",
+    "reference": "1 Peter 2:24"
+  },
+  {
+    "text": "Not rendering evil for evil, or railing for railing: but contrariwise blessing; knowing that ye are thereunto called, that ye should inherit a blessing.",
+    "reference": "1 Peter 3:9"
+  },
+  {
+    "text": "But and if ye suffer for righteousness' sake, happy are ye: and be not afraid of their terror, neither be troubled;",
+    "reference": "1 Peter 3:14"
+  },
+  {
+    "text": "But rejoice, inasmuch as ye are partakers of Christ's sufferings; that, when his glory shall be revealed, ye may be glad also with exceeding joy.",
+    "reference": "1 Peter 4:13"
+  },
+  {
+    "text": "Mercy unto you, and peace, and love, be multiplied.",
+    "reference": "Jude 1:2"
+  },
+  {
+    "text": "Saying, Amen: Blessing, and glory, and wisdom, and thanksgiving, and honour, and power, and might, be unto our God for ever and ever. Amen.",
+    "reference": "Revelation 7:12"
+  },
+  {
+    "text": "Know therefore that the LORD thy God, he is God, the faithful God, which keepeth covenant and mercy with them that love him and keep his commandments to a thousand generations;",
+    "reference": "Deuteronomy 7:9"
+  },
+  {
+    "text": "Blessed be the LORD, that hath given rest unto his people Israel, according to all that he promised: there hath not failed one word of all his good promise, which he promised by the hand of Moses his servant.",
+    "reference": "1 Kings 8:56"
+  },
+  {
+    "text": "On the eighth day he sent the people away: and they blessed the king, and went unto their tents joyful and glad of heart for all the goodness that the LORD had done for David his servant, and for Israel his people.",
+    "reference": "1 Kings 8:66"
+  },
+  {
+    "text": "And say ye, Save us, O God of our salvation, and gather us together, and deliver us from the heathen, that we may give thanks to thy holy name, and glory in thy praise.",
+    "reference": "1 Chronicles 16:35"
+  },
+  {
+    "text": "Now therefore arise, O LORD God, into thy resting place, thou, and the ark of thy strength: let thy priests, O LORD God, be clothed with salvation, and let thy saints rejoice in goodness.",
+    "reference": "2 Chronicles 6:41"
+  },
+  {
+    "text": "Then the Levites, Jeshua, and Kadmiel, Bani, Hashabniah, Sherebiah, Hodijah, Shebaniah, and Pethahiah, said, Stand up and bless the LORD your God for ever and ever: and blessed be thy glorious name, which is exalted above all blessing and praise.",
+    "reference": "Nehemiah 9:5"
+  },
+  {
+    "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
+    "reference": "Psalms 4:8"
+  },
+  {
+    "text": "But as for me, I will come into thy house in the multitude of thy mercy: and in thy fear will I worship toward thy holy temple.",
+    "reference": "Psalms 5:7"
+  },
+  {
+    "text": "I will praise thee, O LORD, with my whole heart; I will shew forth all thy marvellous works.",
+    "reference": "Psalms 9:1"
+  },
+  {
+    "text": "I will bless the LORD, who hath given me counsel: my reins also instruct me in the night seasons.",
+    "reference": "Psalms 16:7"
+  },
+  {
+    "text": "As for me, I will behold thy face in righteousness: I shall be satisfied, when I awake, with thy likeness.",
+    "reference": "Psalms 17:15"
+  },
+  {
+    "text": "I will declare thy name unto my brethren: in the midst of the congregation will I praise thee.",
+    "reference": "Psalms 22:22"
+  },
+  {
+    "text": "My praise shall be of thee in the great congregation: I will pay my vows before them that fear him.",
+    "reference": "Psalms 22:25"
+  },
+  {
+    "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.",
+    "reference": "Psalms 23:4"
+  },
+  {
+    "text": "But as for me, I will walk in mine integrity: redeem me, and be merciful unto me.",
+    "reference": "Psalms 26:11"
+  },
+  {
+    "text": "I will extol thee, O LORD; for thou hast lifted me up, and hast not made my foes to rejoice over me.",
+    "reference": "Psalms 30:1"
+  },
+  {
+    "text": "I will give thee thanks in the great congregation: I will praise thee among much people.",
+    "reference": "Psalms 35:18"
+  },
+  {
+    "text": "I will make thy name to be remembered in all generations: therefore shall the people praise thee for ever and ever.",
+    "reference": "Psalms 45:17"
+  },
+  {
+    "text": "And call upon me in the day of trouble: I will deliver thee, and thou shalt glorify me.",
+    "reference": "Psalms 50:15"
+  },
+  {
+    "text": "I will praise thee for ever, because thou hast done it: and I will wait on thy name; for it is good before thy saints.",
+    "reference": "Psalms 52:9"
+  },
+  {
+    "text": "I will freely sacrifice unto thee: I will praise thy name, O LORD; for it is good.",
+    "reference": "Psalms 54:6"
+  },
+  {
+    "text": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+    "reference": "Psalms 56:4"
+  },
+  {
+    "text": "Thy vows are upon me, O God: I will render praises unto thee.",
+    "reference": "Psalms 56:12"
+  },
+  {
+    "text": "My heart is fixed, O God, my heart is fixed: I will sing and give praise.",
+    "reference": "Psalms 57:7"
+  },
+  {
+    "text": "I will praise thee, O Lord, among the people: I will sing unto thee among the nations.",
+    "reference": "Psalms 57:9"
+  },
+  {
+    "text": "God hath spoken in his holiness; I will rejoice, I will divide Shechem, and mete out the valley of Succoth.",
+    "reference": "Psalms 60:6"
+  },
+  {
+    "text": "Thus will I bless thee while I live: I will lift up my hands in thy name.",
+    "reference": "Psalms 63:4"
+  },
+  {
+    "text": "I will praise the name of God with a song, and will magnify him with thanksgiving.",
+    "reference": "Psalms 69:30"
+  },
+  {
+    "text": "I will also praise thee with the psaltery, even thy truth, O my God: unto thee will I sing with the harp, O thou Holy One of Israel.",
+    "reference": "Psalms 71:22"
+  },
+  {
+    "text": "But I will declare for ever; I will sing praises to the God of Jacob.",
+    "reference": "Psalms 75:9"
+  },
+  {
+    "text": "I will hear what God the LORD will speak: for he will speak peace unto his people, and to his saints: but let them not turn again to folly.",
+    "reference": "Psalms 85:8"
+  },
+  {
+    "text": "I will praise thee, O Lord my God, with all my heart: and I will glorify thy name for evermore.",
+    "reference": "Psalms 86:12"
+  },
+  {
+    "text": "I will sing of the mercies of the LORD for ever: with my mouth will I make known thy faithfulness to all generations.",
+    "reference": "Psalms 89:1"
+  },
+  {
+    "text": "I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust.",
+    "reference": "Psalms 91:2"
+  },
+  {
+    "text": "He shall call upon me, and I will answer him: I will be with him in trouble; I will deliver him, and honour him.",
+    "reference": "Psalms 91:15"
+  },
+  {
+    "text": "I will sing unto the LORD as long as I live: I will sing praise to my God while I have my being.",
+    "reference": "Psalms 104:33"
+  },
+  {
+    "text": "I will praise thee, O LORD, among the people: and I will sing praises unto thee among the nations.",
+    "reference": "Psalms 108:3"
+  },
+  {
+    "text": "I will greatly praise the LORD with my mouth; yea, I will praise him among the multitude.",
+    "reference": "Psalms 109:30"
+  },
+  {
+    "text": "Praise ye the LORD. I will praise the LORD with my whole heart, in the assembly of the upright, and in the congregation.",
+    "reference": "Psalms 111:1"
+  },
+  {
+    "text": "I will take the cup of salvation, and call upon the name of the LORD.",
+    "reference": "Psalms 116:13"
+  },
+  {
+    "text": "Thou art my God, and I will praise thee: thou art my God, I will exalt thee.",
+    "reference": "Psalms 118:28"
+  },
+  {
+    "text": "I will delight myself in thy statutes: I will not forget thy word.",
+    "reference": "Psalms 119:16"
+  },
+  {
+    "text": "My hands also will I lift up unto thy commandments, which I have loved; and I will meditate in thy statutes.",
+    "reference": "Psalms 119:48"
+  },
+  {
+    "text": "For my brethren and companions' sakes, I will now say, Peace be within thee.",
+    "reference": "Psalms 122:8"
+  },
+  {
+    "text": "I will abundantly bless her provision: I will satisfy her poor with bread.",
+    "reference": "Psalms 132:15"
+  },
+  {
+    "text": "I will praise thee with my whole heart: before the gods will I sing praise unto thee.",
+    "reference": "Psalms 138:1"
+  },
+  {
+    "text": "I will worship toward thy holy temple, and praise thy name for thy lovingkindness and for thy truth: for thou hast magnified thy word above all thy name.",
+    "reference": "Psalms 138:2"
+  },
+  {
+    "text": "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+    "reference": "Psalms 139:14"
+  },
+  {
+    "text": "I will sing a new song unto thee, O God: upon a psaltery and an instrument of ten strings will I sing praises unto thee.",
+    "reference": "Psalms 144:9"
+  },
+  {
+    "text": "I will extol thee, my God, O king; and I will bless thy name for ever and ever.",
+    "reference": "Psalms 145:1"
+  },
+  {
+    "text": "While I live will I praise the LORD: I will sing praises unto my God while I have any being.",
+    "reference": "Psalms 146:2"
+  },
+  {
+    "text": "Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you.",
+    "reference": "Proverbs 1:23"
+  },
+  {
+    "text": "In that day shall he swear, saying, I will not be an healer; for in my house is neither bread nor clothing: make me not a ruler of the people.",
+    "reference": "Isaiah 3:7"
+  },
+  {
+    "text": "Behold, I will stir up the Medes against them, which shall not regard silver; and as for gold, they shall not delight in it.",
+    "reference": "Isaiah 13:17"
+  },
+  {
+    "text": "And I will deliver thee and this city out of the hand of the king of Assyria: and I will defend this city.",
+    "reference": "Isaiah 38:6"
+  },
+  {
+    "text": "Yea, before the day was I am he; and there is none that can deliver out of my hand: I will work, and who shall let it?",
+    "reference": "Isaiah 43:13"
+  },
+  {
+    "text": "For mine own sake, even for mine own sake, will I do it: for how should my name be polluted? and I will not give my glory unto another.",
+    "reference": "Isaiah 48:11"
+  },
+  {
+    "text": "In a little wrath I hid my face from thee for a moment; but with everlasting kindness will I have mercy on thee, saith the LORD thy Redeemer.",
+    "reference": "Isaiah 54:8"
+  },
+  {
+    "text": "O thou afflicted, tossed with tempest, and not comforted, behold, I will lay thy stones with fair colours, and lay thy foundations with sapphires.",
+    "reference": "Isaiah 54:11"
+  },
+  {
+    "text": "I will declare thy righteousness, and thy works; for they shall not profit thee.",
+    "reference": "Isaiah 57:12"
+  },
+  {
+    "text": "Whereas thou hast been forsaken and hated, so that no man went through thee, I will make thee an eternal excellency, a joy of many generations.",
+    "reference": "Isaiah 60:15"
+  },
+  {
+    "text": "And I will tread down the people in mine anger, and make them drunk in my fury, and I will bring down their strength to the earth.",
+    "reference": "Isaiah 63:6"
+  },
+  {
+    "text": "For I know their works and their thoughts: it shall come, that I will gather all nations and tongues; and they shall come, and see my glory.",
+    "reference": "Isaiah 66:18"
+  },
+  {
+    "text": "Return, ye backsliding children, and I will heal your backslidings. Behold, we come unto thee; for thou art the LORD our God.",
+    "reference": "Jeremiah 3:22"
+  },
+  {
+    "text": "I spake unto thee in thy prosperity; but thou saidst, I will not hear. This hath been thy manner from thy youth, that thou obeyedst not my voice.",
+    "reference": "Jeremiah 22:21"
+  },
+  {
+    "text": "And I will set up shepherds over them which shall feed them: and they shall fear no more, nor be dismayed, neither shall they be lacking, saith the LORD.",
+    "reference": "Jeremiah 23:4"
+  },
+  {
+    "text": "Behold, the days come, saith the LORD, that I will raise unto David a righteous Branch, and a King shall reign and prosper, and shall execute judgment and justice in the earth.",
+    "reference": "Jeremiah 23:5"
+  },
+  {
+    "text": "And I will bring an everlasting reproach upon you, and a perpetual shame, which shall not be forgotten.",
+    "reference": "Jeremiah 23:40"
+  },
+  {
+    "text": "Then shall the virgin rejoice in the dance, both young men and old together: for I will turn their mourning into joy, and will comfort them, and make them rejoice from their sorrow.",
+    "reference": "Jeremiah 31:13"
+  },
+  {
+    "text": "And I will satiate the soul of the priests with fatness, and my people shall be satisfied with my goodness, saith the LORD.",
+    "reference": "Jeremiah 31:14"
+  },
+  {
+    "text": "Yea, I will rejoice over them to do them good, and I will plant them in this land assuredly with my whole heart and with my whole soul.",
+    "reference": "Jeremiah 32:41"
+  },
+  {
+    "text": "But I will deliver thee in that day, saith the LORD: and thou shalt not be given into the hand of the men of whom thou art afraid.",
+    "reference": "Jeremiah 39:17"
+  },
+  {
+    "text": "And I will shew mercies unto you, that he may have mercy upon you, and cause you to return to your own land.",
+    "reference": "Jeremiah 42:12"
+  },
+  {
+    "text": "In their heat I will make their feasts, and I will make them drunken, that they may rejoice, and sleep a perpetual sleep, and not wake, saith the LORD.",
+    "reference": "Jeremiah 51:39"
+  },
+  {
+    "text": "Therefore ye shall see no more vanity, nor divine divinations: for I will deliver my people out of your hand: and ye shall know that I am the LORD.",
+    "reference": "Ezekiel 13:23"
+  },
+  {
+    "text": "For thus saith the Lord GOD; I will even deal with thee as thou hast done, which hast despised the oath in breaking the covenant.",
+    "reference": "Ezekiel 16:59"
+  },
+  {
+    "text": "And I will establish my covenant with thee; and thou shalt know that I am the LORD:",
+    "reference": "Ezekiel 16:62"
+  },
+  {
+    "text": "And I will cause you to pass under the rod, and I will bring you into the bond of the covenant:",
+    "reference": "Ezekiel 20:37"
+  },
+  {
+    "text": "For thus saith the Lord GOD; Behold, I will deliver thee into the hand of them whom thou hatest, into the hand of them from whom thy mind is alienated:",
+    "reference": "Ezekiel 23:28"
+  },
+  {
+    "text": "Therefore, behold, I will open the side of Moab from the cities, from his cities which are on his frontiers, the glory of the country, Bethjeshimoth, Baalmeon, and Kiriathaim,",
+    "reference": "Ezekiel 25:9"
+  },
+  {
+    "text": "For I will lay the land most desolate, and the pomp of her strength shall cease; and the mountains of Israel shall be desolate, that none shall pass through.",
+    "reference": "Ezekiel 33:28"
+  },
+  {
+    "text": "And I will set up one shepherd over them, and he shall feed them, even my servant David; he shall feed them, and he shall be their shepherd.",
+    "reference": "Ezekiel 34:23"
+  },
+  {
+    "text": "Thus saith the Lord GOD; When the whole earth rejoiceth, I will make thee desolate.",
+    "reference": "Ezekiel 35:14"
+  },
+  {
+    "text": "And I will restore to you the years that the locust hath eaten, the cankerworm, and the caterpiller, and the palmerworm, my great army which I sent among you.",
+    "reference": "Joel 2:25"
+  },
+  {
+    "text": "Therefore I will look unto the LORD; I will wait for the God of my salvation: my God will hear me.",
+    "reference": "Micah 7:7"
+  },
+  {
+    "text": "Turn you to the strong hold, ye prisoners of hope: even to day do I declare that I will render double unto thee;",
+    "reference": "Zechariah 9:12"
+  },
+  {
+    "text": "I will hiss for them, and gather them; for I have redeemed them: and they shall increase as they have increased.",
+    "reference": "Zechariah 10:8"
+  },
+  {
+    "text": "And I will strengthen them in the LORD; and they shall walk up and down in his name, saith the LORD.",
+    "reference": "Zechariah 10:12"
+  },
+  {
+    "text": "And Jesus saith unto him, I will come and heal him.",
+    "reference": "Matthew 8:7"
+  },
+  {
+    "text": "But if ye had known what this meaneth, I will have mercy, and not sacrifice, ye would not have condemned the guiltless.",
+    "reference": "Matthew 12:7"
+  },
+  {
+    "text": "Then said the lord of the vineyard, What shall I do? I will send my beloved son: it may be they will reverence him when they see him.",
+    "reference": "Luke 20:13"
+  },
+  {
+    "text": "For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God.",
+    "reference": "Luke 22:16"
+  },
+  {
+    "text": "For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God shall come.",
+    "reference": "Luke 22:18"
+  },
+  {
+    "text": "And I will pray the Father, and he shall give you another Comforter, that he may abide with you for ever;",
+    "reference": "John 14:16"
+  },
+  {
+    "text": "I will not leave you comfortless: I will come to you.",
+    "reference": "John 14:18"
+  },
+  {
+    "text": "But when the Comforter is come, whom I will send unto you from the Father, even the Spirit of truth, which proceedeth from the Father, he shall testify of me:",
+    "reference": "John 15:26"
+  },
+  {
+    "text": "And on my servants and on my handmaidens I will pour out in those days of my Spirit; and they shall prophesy:",
+    "reference": "Acts 2:18"
+  },
+  {
+    "text": "For he saith to Moses, I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.",
+    "reference": "Romans 9:15"
+  },
+  {
+    "text": "As he saith also in Osee, I will call them my people, which were not my people; and her beloved, which was not beloved.",
+    "reference": "Romans 9:25"
+  },
+  {
+    "text": "And that the Gentiles might glorify God for his mercy; as it is written, For this cause I will confess to thee among the Gentiles, and sing unto thy name.",
+    "reference": "Romans 15:9"
+  },
+  {
+    "text": "But what I do, that I will do, that I may cut off occasion from them which desire occasion; that wherein they glory, they may be found even as we.",
+    "reference": "2 Corinthians 11:12"
+  },
+  {
+    "text": "Seeing that many glory after the flesh, I will glory also.",
+    "reference": "2 Corinthians 11:18"
+  },
+  {
+    "text": "If I must needs glory, I will glory of the things which concern mine infirmities.",
+    "reference": "2 Corinthians 11:30"
+  },
+  {
+    "text": "It is not expedient for me doubtless to glory. I will come to visions and revelations of the Lord.",
+    "reference": "2 Corinthians 12:1"
+  },
+  {
+    "text": "Of such an one will I glory: yet of myself I will not glory, but in mine infirmities.",
+    "reference": "2 Corinthians 12:5"
+  },
+  {
+    "text": "And I will very gladly spend and be spent for you; though the more abundantly I love you, the less I be loved.",
+    "reference": "2 Corinthians 12:15"
+  },
+  {
+    "text": "Saying, I will declare thy name unto my brethren, in the midst of the church will I sing praise unto thee.",
+    "reference": "Hebrews 2:12"
+  },
+  {
+    "text": "For I will be merciful to their unrighteousness, and their sins and their iniquities will I remember no more.",
+    "reference": "Hebrews 8:12"
+  },
+  {
+    "text": "Saying with a loud voice, Worthy is the Lamb that was slain to receive power, and riches, and wisdom, and strength, and honour, and glory, and blessing.",
+    "reference": "Revelation 5:12"
+  },
+  {
+    "text": "He that overcometh shall inherit all things; and I will be his God, and he shall be my son.",
+    "reference": "Revelation 21:7"
+  },
+  {
+    "text": "And the bow shall be in the cloud; and I will look upon it, that I may remember the everlasting covenant between God and every living creature of all flesh that is upon the earth.",
+    "reference": "Genesis 9:16"
+  },
+  {
+    "text": "After these things the word of the LORD came unto Abram in a vision, saying, Fear not, Abram: I am thy shield, and thy exceeding great reward.",
+    "reference": "Genesis 15:1"
+  },
+  {
+    "text": "And I will establish my covenant between me and thee and thy seed after thee in their generations for an everlasting covenant, to be a God unto thee, and to thy seed after thee.",
+    "reference": "Genesis 17:7"
+  },
+  {
+    "text": "And God said, Sarah thy wife shall bear thee a son indeed; and thou shalt call his name Isaac: and I will establish my covenant with him for an everlasting covenant, and with his seed after him.",
+    "reference": "Genesis 17:19"
+  },
+  {
+    "text": "And as for Ishmael, I have heard thee: Behold, I have blessed him, and will make him fruitful, and will multiply him exceedingly; twelve princes shall he beget, and I will make him a great nation.",
+    "reference": "Genesis 17:20"
+  },
+  {
+    "text": "And I will make thy seed to multiply as the stars of heaven, and will give unto thy seed all these countries; and in thy seed shall all the nations of the earth be blessed;",
+    "reference": "Genesis 26:4"
+  },
+  {
+    "text": "All these are the twelve tribes of Israel: and this is it that their father spake unto them, and blessed them; every one according to his blessing he blessed them.",
+    "reference": "Genesis 49:28"
+  },
+  {
+    "text": "The LORD is my strength and song, and he is become my salvation: he is my God, and I will prepare him an habitation; my father's God, and I will exalt him.",
+    "reference": "Exodus 15:2"
+  },
+  {
+    "text": "Thou in thy mercy hast led forth the people which thou hast redeemed: thou hast guided them in thy strength unto thy holy habitation.",
+    "reference": "Exodus 15:13"
+  },
+  {
+    "text": "And Jethro rejoiced for all the goodness which the LORD had done to Israel, whom he had delivered out of the hand of the Egyptians.",
+    "reference": "Exodus 18:9"
+  },
+  {
+    "text": "An altar of earth thou shalt make unto me, and shalt sacrifice thereon thy burnt offerings, and thy peace offerings, thy sheep, and thine oxen: in all places where I record my name I will come unto thee, and I will bless thee.",
+    "reference": "Exodus 20:24"
+  },
+  {
+    "text": "And he said, I will make all my goodness pass before thee, and I will proclaim the name of the LORD before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.",
+    "reference": "Exodus 33:19"
+  },
+  {
+    "text": "And Aaron lifted up his hand toward the people, and blessed them, and came down from offering of the sin offering, and the burnt offering, and peace offerings.",
+    "reference": "Leviticus 9:22"
+  },
+  {
+    "text": "And Moses and Aaron went into the tabernacle of the congregation, and came out, and blessed the people: and the glory of the LORD appeared unto all the people.",
+    "reference": "Leviticus 9:23"
+  },
+  {
+    "text": "(The LORD God of your fathers make you a thousand times so many more as ye are, and bless you, as he hath promised you!)",
+    "reference": "Deuteronomy 1:11"
+  },
+  {
+    "text": "When the LORD thy God shall enlarge thy border, as he hath promised thee, and thou shalt say, I will eat flesh, because thy soul longeth to eat flesh; thou mayest eat flesh, whatsoever thy soul lusteth after.",
+    "reference": "Deuteronomy 12:20"
+  },
+  {
+    "text": "And this is the blessing, wherewith Moses the man of God blessed the children of Israel before his death.",
+    "reference": "Deuteronomy 33:1"
+  },
+  {
+    "text": "And of Naphtali he said, O Naphtali, satisfied with favour, and full with the blessing of the LORD: possess thou the west and the south.",
+    "reference": "Deuteronomy 33:23"
+  },
+  {
+    "text": "Give out from among you three men for each tribe: and I will send them, and they shall rise, and go through the land, and describe it according to the inheritance of them; and they shall come again to me.",
+    "reference": "Joshua 18:4"
+  },
+  {
+    "text": "But I would not hearken unto Balaam; therefore he blessed you still: so I delivered you out of his hand.",
+    "reference": "Joshua 24:10"
+  },
+  {
+    "text": "And the LORD said unto him, Peace be unto thee; fear not: thou shalt not die.",
+    "reference": "Judges 6:23"
+  },
+  {
+    "text": "And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.",
+    "reference": "Ruth 4:6"
+  },
+  {
+    "text": "And as soon as David had made an end of offering burnt offerings and peace offerings, he blessed the people in the name of the LORD of hosts.",
+    "reference": "2 Samuel 6:18"
+  },
+  {
+    "text": "And now, O Lord GOD, thou art that God, and thy words be true, and thou hast promised this goodness unto thy servant:",
+    "reference": "2 Samuel 7:28"
+  },
+  {
+    "text": "Wherefore David said unto the Gibeonites, What shall I do for you? and wherewith shall I make the atonement, that ye may bless the inheritance of the LORD?",
+    "reference": "2 Samuel 21:3"
+  },
+  {
+    "text": "The LORD liveth; and blessed be my rock; and exalted be the God of the rock of my salvation.",
+    "reference": "2 Samuel 22:47"
   }
 ]

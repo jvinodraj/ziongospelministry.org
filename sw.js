@@ -1,4 +1,4 @@
-const CACHE_NAME = "zgm-static-v1";
+const CACHE_NAME = "zgm-static-v2";
 const CORE_ASSETS = [
   "./",
   "./index.html",

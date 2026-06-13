@@ -297,6 +297,109 @@ function renderPrayerWall(items) {
   });
 }
 
+const EN_TO_TA_BOOK = {
+  "Genesis": "ஆதியாகமம்",
+  "Exodus": "யாத்திராகமம்",
+  "Leviticus": "லேவியராகமம்",
+  "Numbers": "எண்ணாகமம்",
+  "Deuteronomy": "உபாகமம்",
+  "Joshua": "யோசுவா",
+  "Judges": "நியாயாதிபதிகள்",
+  "Ruth": "ரூத்",
+  "1 Samuel": "1 சாமுவேல்",
+  "2 Samuel": "2 சாமுவேல்",
+  "1 Kings": "1 இராஜாக்கள்",
+  "2 Kings": "2 இராஜாக்கள்",
+  "1 Chronicles": "1 நாளாகமம்",
+  "2 Chronicles": "2 நாளாகமம்",
+  "Ezra": "எஸ்றா",
+  "Nehemiah": "நெகேமியா",
+  "Esther": "எஸ்தர்",
+  "Job": "யோபு",
+  "Psalms": "சங்கீதம்",
+  "Proverbs": "நீதிமொழிகள்",
+  "Ecclesiastes": "பிரசங்கி",
+  "Song of Solomon": "உன்னதப்பாட்டு",
+  "Isaiah": "ஏசாயா",
+  "Jeremiah": "எரேமியா",
+  "Lamentations": "புலம்பல்",
+  "Ezekiel": "எசேக்கியேல்",
+  "Daniel": "தானியேல்",
+  "Hosea": "ஓசியா",
+  "Joel": "யோவேல்",
+  "Amos": "ஆமோஸ்",
+  "Obadiah": "ஒபதியா",
+  "Jonah": "யோனா",
+  "Micah": "மீகா",
+  "Nahum": "நாகூம்",
+  "Habakkuk": "ஆபகூக்",
+  "Zephaniah": "செப்பனியா",
+  "Haggai": "ஆகாய்",
+  "Zechariah": "சகரியா",
+  "Malachi": "மல்கியா",
+  "Matthew": "மத்தேயு",
+  "Mark": "மாற்கு",
+  "Luke": "லூக்கா",
+  "John": "யோவான்",
+  "Acts": "அப்போஸ்தலர்",
+  "Romans": "ரோமர்",
+  "1 Corinthians": "1 கொரிந்தியர்",
+  "2 Corinthians": "2 கொரிந்தியர்",
+  "Galatians": "கலாத்தியர்",
+  "Ephesians": "எபேசியர்",
+  "Philippians": "பிலிப்பியர்",
+  "Colossians": "கொலோசெயர்",
+  "1 Thessalonians": "1 தெசலோனிக்கேயர்",
+  "2 Thessalonians": "2 தெசலோனிக்கேயர்",
+  "1 Timothy": "1 தீமோத்தேயு",
+  "2 Timothy": "2 தீமோத்தேயு",
+  "Titus": "தீத்து",
+  "Philemon": "பிலேமோன்",
+  "Hebrews": "எபிரெயர்",
+  "James": "யாக்கோபு",
+  "1 Peter": "1 பேதுரு",
+  "2 Peter": "2 பேதுரு",
+  "1 John": "1 யோவான்",
+  "2 John": "2 யோவான்",
+  "3 John": "3 யோவான்",
+  "Jude": "யூதா",
+  "Revelation": "வெளிப்படுத்தின விசேஷம்"
+};
+
+function parseReference(reference) {
+  const match = String(reference || "").trim().match(/^(.+)\s+(\d+):(\d+)$/);
+  if (!match) return null;
+  return {
+    book: match[1],
+    chapter: match[2],
+    verse: match[3]
+  };
+}
+
+function getTamilVerseByReference(reference, taBible) {
+  if (!taBible || Array.isArray(taBible)) return "";
+  const parts = parseReference(reference);
+  if (!parts) return "";
+
+  const taBook = EN_TO_TA_BOOK[parts.book];
+  if (!taBook || !taBible[taBook]) return "";
+
+  const chapterObj = taBible[taBook][parts.chapter];
+  if (!chapterObj) return "";
+  const text = chapterObj[parts.verse];
+  return typeof text === "string" ? text.trim() : "";
+}
+
+function enrichVersesWithTamil(verses, taBible) {
+  return verses.map((verse) => {
+    const tamil = verse.tamilText || verse.text_ta || getTamilVerseByReference(verse.reference, taBible);
+    return {
+      ...verse,
+      tamilText: String(tamil || "").trim()
+    };
+  });
+}
+
 function renderWeeklyAndDailyVerses(verses) {
   if (!verses.length) return;
 
@@ -306,15 +409,45 @@ function renderWeeklyAndDailyVerses(verses) {
 
   const daily = verses[dayIndex];
   const weekly = verses[weekIndex];
+  const tamilFallback = "Tamil verse will appear when Tamil Bible data is available.";
 
   const weeklySlot = bySel("[data-weekly-verse]");
   if (weeklySlot) {
-    weeklySlot.innerHTML = `<blockquote>"${weekly.text}"</blockquote><p class="muted">${weekly.reference}</p>`;
+    weeklySlot.innerHTML = `
+      <div class="verse-bilingual-grid">
+        <article class="verse-lang-card">
+          <h3>English</h3>
+          <blockquote>${weekly.text}</blockquote>
+        </article>
+        <article class="verse-lang-card">
+          <h3>Tamil</h3>
+          <blockquote>${weekly.tamilText || tamilFallback}</blockquote>
+        </article>
+      </div>
+      <p class="muted">${weekly.reference}</p>
+    `;
   }
 
   const dailySlot = bySel("[data-daily-grace]");
   if (dailySlot) {
-    dailySlot.innerHTML = `<h3>Daily Scripture</h3><p>"${daily.text}"</p><p class="muted">${daily.reference}</p><h3>Devotional Thought</h3><p>Grace empowers us to trust God today and walk by faith in every season.</p><h3>Daily Quote</h3><p class="muted">"Christ is our righteousness, peace, and hope."</p>`;
+    dailySlot.innerHTML = `
+      <h3>Daily Scripture</h3>
+      <div class="verse-bilingual-grid">
+        <article class="verse-lang-card">
+          <h3>English</h3>
+          <p>${daily.text}</p>
+        </article>
+        <article class="verse-lang-card">
+          <h3>Tamil</h3>
+          <p>${daily.tamilText || tamilFallback}</p>
+        </article>
+      </div>
+      <p class="muted">${daily.reference}</p>
+      <h3>Devotional Thought</h3>
+      <p>Grace empowers us to trust God today and walk by faith in every season.</p>
+      <h3>Daily Quote</h3>
+      <p class="muted">"Christ is our righteousness, peace, and hope."</p>
+    `;
   }
 }
 
@@ -374,15 +507,18 @@ function initMemoryTracker() {
 }
 
 async function bootData() {
-  const [events, sermons, studies, devotions, missions, prayerWall, verses] = await Promise.all([
+  const [events, sermons, studies, devotions, missions, prayerWall, verses, tamilBible] = await Promise.all([
     getJson("assets/data/events.json"),
     getJson("assets/data/sermons.json"),
     getJson("assets/data/studies.json"),
     getJson("assets/data/devotions.json"),
     getJson("assets/data/missions.json"),
     getJson("assets/data/prayer-wall.json"),
-    getJson("assets/data/verses.json")
+    getJson("assets/data/verses.json"),
+    getJson("bible-data/bible-ta-ov.json")
   ]);
+
+  const bilingualVerses = enrichVersesWithTamil(verses, tamilBible);
 
   renderHomeEvents(events);
   renderEventsPage(events);
@@ -392,7 +528,7 @@ async function bootData() {
   renderDevotions(devotions);
   renderMissions(missions);
   renderPrayerWall(prayerWall);
-  renderWeeklyAndDailyVerses(verses);
+  renderWeeklyAndDailyVerses(bilingualVerses);
 }
 
 function registerServiceWorker() {
