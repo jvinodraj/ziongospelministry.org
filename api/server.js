@@ -7,6 +7,7 @@ const app = express();
 const port = Number(process.env.PORT || 8787);
 const defaultAllowedOrigins = [
   "https://ziongospelministry.org",
+  "https://www.ziongospelministry.org",
   "http://127.0.0.1:4177",
   "http://localhost:4177"
 ];
@@ -18,13 +19,49 @@ const allowedOrigins = String(process.env.ALLOWED_ORIGINS || "")
 
 const origins = allowedOrigins.length ? allowedOrigins : defaultAllowedOrigins;
 
+function normalizeOrigin(value) {
+  try {
+    const url = new URL(value);
+    return `${url.protocol}//${url.host}`.toLowerCase();
+  } catch (_err) {
+    return "";
+  }
+}
+
+function addWwwVariant(origin) {
+  try {
+    const url = new URL(origin);
+    if (url.hostname.startsWith("www.")) return origin;
+    if (url.hostname === "localhost" || /^\d+\.\d+\.\d+\.\d+$/.test(url.hostname)) return origin;
+    url.hostname = `www.${url.hostname}`;
+    return `${url.protocol}//${url.host}`.toLowerCase();
+  } catch (_err) {
+    return origin;
+  }
+}
+
+const normalizedOriginSet = new Set();
+origins.forEach((origin) => {
+  const normalized = normalizeOrigin(origin);
+  if (!normalized) return;
+  normalizedOriginSet.add(normalized);
+  normalizedOriginSet.add(addWwwVariant(normalized));
+});
+
 app.use(cors({
   origin(origin, callback) {
-    if (!origin || origins.includes(origin)) {
+    if (!origin) {
       callback(null, true);
       return;
     }
-    callback(new Error("Origin not allowed"));
+
+    const normalizedRequestOrigin = normalizeOrigin(origin);
+    if (normalizedOriginSet.has(normalizedRequestOrigin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error(`Origin not allowed: ${origin}`));
   }
 }));
 
