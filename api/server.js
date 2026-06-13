@@ -8,6 +8,7 @@ const port = Number(process.env.PORT || 8787);
 const defaultAllowedOrigins = [
   "https://ziongospelministry.org",
   "https://www.ziongospelministry.org",
+  "https://ziongospelministry-org.onrender.com",
   "http://127.0.0.1:4177",
   "http://localhost:4177"
 ];
@@ -18,6 +19,7 @@ const allowedOrigins = String(process.env.ALLOWED_ORIGINS || "")
   .filter(Boolean);
 
 const origins = allowedOrigins.length ? allowedOrigins : defaultAllowedOrigins;
+const allowAllOrigins = origins.includes("*");
 
 function normalizeOrigin(value) {
   try {
@@ -50,6 +52,11 @@ origins.forEach((origin) => {
 
 app.use(cors({
   origin(origin, callback) {
+    if (allowAllOrigins) {
+      callback(null, true);
+      return;
+    }
+
     if (!origin) {
       callback(null, true);
       return;
@@ -163,4 +170,6 @@ app.use((_req, res) => {
 
 app.listen(port, () => {
   console.log(`Contact API running on port ${port}`);
+  console.log(`CORS allow-all: ${allowAllOrigins}`);
+  console.log(`CORS allowed origins: ${origins.join(", ")}`);
 });
