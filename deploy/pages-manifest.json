@@ -9,6 +9,6 @@
     "*.html"
   ],
   "prod": [
-    "index.html"
+    "index.html", "bible.html", "contact.html"
   ]
 }

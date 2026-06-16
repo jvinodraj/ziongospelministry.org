@@ -81,6 +81,10 @@ app.use(cors({
 
 app.use(express.json({ limit: "100kb" }));
 
+app.get("/", (_req, res) => {
+  res.status(200).json({ ok: true, service: "zion-contact-api", health: "/api/health" });
+});
+
 async function readJsonFile(filePath, fallback) {
   try {
     const content = await fs.readFile(filePath, "utf8");
