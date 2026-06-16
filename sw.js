@@ -1,8 +1,9 @@
-const CACHE_NAME = "zgm-static-v2";
+const CACHE_NAME = "zgm-static-v3";
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./about.html",
+  "./bible.html",
   "./sermons.html",
   "./bible-studies.html",
   "./ministries.html",
@@ -12,8 +13,11 @@ const CORE_ASSETS = [
   "./resources.html",
   "./contact.html",
   "./assets/css/style.css",
+  "./assets/css/bible.css",
   "./assets/js/site.js",
   "./assets/js/bible.js",
+  "./assets/js/bible-reader.js",
+  "./assets/data/bible-books.json",
   "./manifest.webmanifest"
 ];
 
