@@ -1,0 +1,23 @@
+name = "zion-contact-api"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Worker will be deployed to api.ziongospelministry.org
+# Set this route after DNS is configured in Cloudflare dashboard.
+# routes = [
+#   { pattern = "api.ziongospelministry.org/*", zone_name = "ziongospelministry.org" }
+# ]
+
+# ─── Secrets ─────────────────────────────────────────────────────────────────
+# Do NOT put real values here. Set them with:
+#   wrangler secret put RESEND_API_KEY
+#   wrangler secret put CONTACT_TO
+#   wrangler secret put FROM_EMAIL
+#   wrangler secret put ALLOWED_ORIGINS
+#
+# Or set them in Cloudflare Dashboard:
+#   Workers & Pages → zion-contact-api → Settings → Variables and Secrets
+
+[vars]
+# Non-secret defaults (can be overridden by dashboard variables)
+ALLOWED_ORIGINS = "https://ziongospelministry.org,https://www.ziongospelministry.org"
