@@ -99,6 +99,51 @@ function resolveApiEndpoint(form) {
   return new URL(action, envBase.endsWith("/") ? envBase : `${envBase}/`).toString();
 }
 
+function formActionPath(form) {
+  const action = String(form.getAttribute("action") || "").trim();
+  return action.replace(/^https?:\/\/[^/]+/i, "");
+}
+
+function buildApiPayload(form, fd) {
+  const actionPath = formActionPath(form);
+
+  if (actionPath === "/api/small-group") {
+    return {
+      name: String(fd.get("name") || "").trim(),
+      area: String(fd.get("area") || "").trim(),
+      phone: String(fd.get("phone") || "").trim(),
+      message: String(fd.get("message") || "").trim()
+    };
+  }
+
+  if (actionPath === "/api/volunteer") {
+    return {
+      name: String(fd.get("name") || "").trim(),
+      email: String(fd.get("email") || "").trim(),
+      ministry: String(fd.get("ministry") || "").trim(),
+      message: String(fd.get("message") || "").trim()
+    };
+  }
+
+  return {
+    name: String(fd.get("name") || "").trim(),
+    email: String(fd.get("email") || "").trim(),
+    subject: String(fd.get("subject") || "").trim(),
+    message: String(fd.get("message") || "").trim()
+  };
+}
+
+function successMessageForForm(form) {
+  const actionPath = formActionPath(form);
+  if (actionPath === "/api/small-group") {
+    return "Thank you. Your small group registration has been received.";
+  }
+  if (actionPath === "/api/volunteer") {
+    return "Thank you. Your volunteer signup has been received.";
+  }
+  return "Thank you. Your message has been sent.";
+}
+
 function initEmailApiForms() {
   bySelAll("form[data-email-submit]").forEach((form) => {
     form.addEventListener("submit", async (e) => {
@@ -112,12 +157,7 @@ function initEmailApiForms() {
       }
 
       const fd = new FormData(form);
-      const payload = {
-        name: String(fd.get("name") || "").trim(),
-        email: String(fd.get("email") || "").trim(),
-        subject: String(fd.get("subject") || "").trim(),
-        message: String(fd.get("message") || "").trim()
-      };
+      const payload = buildApiPayload(form, fd);
 
       try {
         const res = await fetch(resolveApiEndpoint(form), {
@@ -129,12 +169,24 @@ function initEmailApiForms() {
           body: JSON.stringify(payload)
         });
 
-        if (!res.ok) throw new Error("Failed to submit message.");
+        if (!res.ok) {
+          let apiError = "Failed to submit form.";
+          try {
+            const data = await res.json();
+            if (data && typeof data.error === "string" && data.error) {
+              apiError = data.error;
+            }
+          } catch (_jsonErr) {
+            // Keep fallback API error message when response body is not JSON.
+          }
+          throw new Error(apiError);
+        }
 
-        setFormMessage(form, "Thank you. Your message has been sent.");
+        setFormMessage(form, successMessageForForm(form));
         form.reset();
-      } catch (_err) {
-        setFormMessage(form, "Unable to send right now. Please try again shortly.");
+      } catch (err) {
+        const msg = err && err.message ? err.message : "Unable to send right now. Please try again shortly.";
+        setFormMessage(form, msg);
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
