@@ -7,10 +7,12 @@
   ],
   "dev": [
     "index.html",
-    "contact.html"
+    "contact.html",
+    "maintenance.html"
   ],
   "prod": [
     "index.html",
-    "contact.html"
+    "contact.html",
+    "maintenance.html"
   ]
 }
