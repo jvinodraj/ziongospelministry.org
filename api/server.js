@@ -10,7 +10,7 @@ const port = Number(process.env.PORT || 8787);
 const defaultAllowedOrigins = [
   "https://ziongospelministry.org",
   "https://www.ziongospelministry.org",
-  "https://ziongospelministry-org.onrender.com",
+  "https://ziongospelministry.pages.dev",
   "http://127.0.0.1:4177",
   "http://localhost:4177"
 ];

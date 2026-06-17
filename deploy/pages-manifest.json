@@ -6,9 +6,11 @@
     "sw.js"
   ],
   "dev": [
-    "*.html"
+    "index.html",
+    "contact.html"
   ],
   "prod": [
-    "index.html", "bible.html", "contact.html", "maintenance.html"
+    "index.html",
+    "contact.html"
   ]
 }
