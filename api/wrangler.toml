@@ -14,6 +14,7 @@ compatibility_date = "2025-01-01"
 #   wrangler secret put CONTACT_TO
 #   wrangler secret put FROM_EMAIL
 #   wrangler secret put ALLOWED_ORIGINS
+#   wrangler secret put EXPORT_TOKEN
 #
 # Or set them in Cloudflare Dashboard:
 #   Workers & Pages → zion-contact-api → Settings → Variables and Secrets
@@ -21,3 +22,8 @@ compatibility_date = "2025-01-01"
 [vars]
 # Non-secret defaults (can be overridden by dashboard variables)
 ALLOWED_ORIGINS = "https://ziongospelministry.org,https://www.ziongospelministry.org"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "zion_ministry_db"
+database_id = "924048ce-eb91-4d8b-8f2b-cf73b24417e8"
