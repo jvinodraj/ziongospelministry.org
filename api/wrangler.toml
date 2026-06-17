@@ -21,7 +21,7 @@ compatibility_date = "2025-01-01"
 
 [vars]
 # Non-secret defaults (can be overridden by dashboard variables)
-ALLOWED_ORIGINS = "https://ziongospelministry.org,https://www.ziongospelministry.org"
+ALLOWED_ORIGINS = "https://ziongospelministry.org,https://www.ziongospelministry.org,http://127.0.0.1:4177,http://localhost:4177"
 
 [[d1_databases]]
 binding = "DB"
