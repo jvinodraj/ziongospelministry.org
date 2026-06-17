@@ -1,23 +1,15 @@
-const CACHE_NAME = "zgm-static-v3";
+const CACHE_NAME = "zgm-static-v4";
 const CORE_ASSETS = [
   "./",
   "./index.html",
-  "./about.html",
-  "./bible.html",
-  "./sermons.html",
-  "./bible-studies.html",
-  "./ministries.html",
-  "./events.html",
-  "./missions.html",
-  "./prayer.html",
-  "./resources.html",
   "./contact.html",
+  "./maintenance.html",
   "./assets/css/style.css",
-  "./assets/css/bible.css",
   "./assets/js/site.js",
-  "./assets/js/bible.js",
-  "./assets/js/bible-reader.js",
-  "./assets/data/bible-books.json",
+  "./assets/data/events.json",
+  "./assets/data/sermons.json",
+  "./assets/data/verses.json",
+  "./assets/icons/favicon.ico",
   "./manifest.webmanifest"
 ];
 
