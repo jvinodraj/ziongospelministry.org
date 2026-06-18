@@ -13,6 +13,7 @@
   "prod": [
     "index.html",
     "contact.html",
-    "maintenance.html"
+    "maintenance.html",
+    "bible-reader.html"
   ]
 }

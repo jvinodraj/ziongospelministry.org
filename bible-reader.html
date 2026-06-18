@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bible Study Portal | Zion Gospel Ministry</title>
+  <meta name="description" content="Explore the Holy Bible with our interactive Bible Study Portal. Read in English and Tamil, search scriptures, and discover related sermons and devotional content.">
+  <meta name="theme-color" content="#3f6f98">
+  <meta property="og:title" content="Bible Study Portal | Zion Gospel Ministry">
+  <meta property="og:description" content="Interactive Bible reading with English and Tamil translations, sermon connections, and daily devotions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ziongospelministry.org/bible-reader.html">
+  <link rel="canonical" href="https://ziongospelministry.org/bible-reader.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-180.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bible-reader.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Bible Study Portal",
+    "description": "Interactive Bible reading portal with English and Tamil translations",
+    "url": "https://ziongospelministry.org/bible-reader.html",
+    "applicationCategory": "EducationalApplication"
+  }
+  </script>
+  <script src="assets/js/bible-sample-data.js"></script>
+  <script defer src="assets/js/bible-portal.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Zion Gospel Ministry Home">
+        <span class="cross-mark" aria-hidden="true"></span>
+        <span class="brand-name">Zion Gospel Ministry</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="bible-reader.html">Bible</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="top-actions">
+        <button class="theme-btn" type="button" data-theme-toggle>Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+
+      <!-- HERO/TITLE SECTION -->
+      <section class="bible-header reveal">
+        <div class="bible-header-content">
+          <h1>📖 Holy Bible Study Portal</h1>
+          <p>Explore Scripture in English and Tamil with devotional resources and ministry connections.</p>
+        </div>
+      </section>
+
+      <!-- SEARCH BAR -->
+      <section class="search-section reveal">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="verse-search" 
+            class="search-input" 
+            placeholder="Search Bible... (e.g., John 3:16, love, faith)" 
+            aria-label="Search Bible verses"
+          >
+          <button id="search-btn" class="btn" type="button">Search</button>
+        </div>
+        <div id="search-results" class="search-results hidden" aria-live="polite" aria-label="Search results"></div>
+      </section>
+
+      <!-- NAVIGATION & VIEW CONTROLS -->
+      <section class="nav-controls reveal">
+        <div class="nav-grid">
+          <!-- Quick Navigation -->
+          <div class="nav-selectors">
+            <label for="book-select">Book:</label>
+            <select id="book-select" aria-label="Select Bible book">
+              <option value="">Select a book…</option>
+            </select>
+
+            <label for="chapter-select">Chapter:</label>
+            <select id="chapter-select" aria-label="Select chapter" disabled>
+              <option value="">Select a chapter…</option>
+            </select>
+
+            <label for="translation-select">Bible Translation:</label>
+            <select id="translation-select" aria-label="Select Bible translation">
+              <option value="kjv">KJV — King James Version</option>
+              <option value="nkjv">NKJV — New King James Version</option>
+              <option value="niv">NIV — New International Version</option>
+              <option value="esv">ESV — English Standard Version</option>
+              <option value="pv">PV — பரிசுத்த வேதாகமம்</option>
+            </select>
+          </div>
+
+          <!-- View Mode Toggle -->
+          <fieldset class="view-modes">
+            <legend>View Mode:</legend>
+            <div class="mode-buttons">
+              <label class="radio-btn">
+                <input type="radio" name="view-mode" value="single-verse" aria-label="Single verse view">
+                <span>Single Verse</span>
+              </label>
+              <label class="radio-btn">
+                <input type="radio" name="view-mode" value="chapter" checked aria-label="Complete chapter view">
+                <span>Chapter</span>
+              </label>
+              <label class="radio-btn">
+                <input type="radio" name="view-mode" value="parallel" aria-label="Parallel English-Tamil view">
+                <span>Parallel</span>
+              </label>
+              <label class="radio-btn">
+                <input type="radio" name="view-mode" value="meditation" aria-label="Meditation mode">
+                <span>🧘 Meditate</span>
+              </label>
+              <label class="radio-btn">
+                <input type="radio" name="view-mode" value="audio" aria-label="Audio view">
+                <span>🎧 Audio</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Display Options -->
+          <fieldset class="display-options">
+            <legend>Options:</legend>
+            <label class="checkbox">
+              <input type="checkbox" id="show-verse-numbers" checked>
+              <span>Verse Numbers</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id="dark-reader-mode">
+              <span>Reader Mode</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id="show-translations">
+              <span>Show Companion Translation</span>
+            </label>
+          </fieldset>
+        </div>
+      </section>
+
+      <!-- MAIN CONTENT AREA -->
+      <div class="reader-layout">
+
+        <!-- MAIN CONTENT -->
+        <div class="reader-main reader-main-full">
+
+          <!-- VERSE CONTENT AREA -->
+          <article class="verse-display reveal" id="verse-display">
+            <div id="verse-content" class="verse-content">
+              <div class="placeholder">
+                <p>Select a book and chapter to begin reading.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ACTIONS -->
+          <div class="verse-actions reveal">
+            <button id="listen-btn" class="btn-icon" title="Listen to chapter (Text-to-Speech)" aria-label="Listen to chapter">
+              🔊 Listen
+            </button>
+            <button id="copy-btn" class="btn-icon" title="Copy chapter text" aria-label="Copy chapter text to clipboard">
+              📋 Copy
+            </button>
+            <button id="share-btn" class="btn-icon" title="Share chapter" aria-label="Share chapter">
+              📤 Share
+            </button>
+            <button id="bookmark-btn" class="btn-icon" title="Bookmark this chapter" aria-label="Bookmark chapter">
+              🔖 Bookmark
+            </button>
+            <button id="favorite-btn" class="btn-icon" title="Add to favorites" aria-label="Add to favorites">
+              ❤️ Favorite
+            </button>
+          </div>
+
+          <!-- NAVIGATION -->
+          <div class="verse-nav reveal">
+            <button id="prev-btn" class="btn-nav" type="button" aria-label="Previous chapter">← Previous</button>
+            <span id="current-ref" class="current-ref" aria-live="polite">Select a chapter</span>
+            <button id="next-btn" class="btn-nav" type="button" aria-label="Next chapter">Next →</button>
+          </div>
+
+          <!-- RELATED VERSES -->
+          <section class="related-verses reveal">
+            <h3>Related Scriptures</h3>
+            <div id="related-verses-list" class="related-list">
+              <p class="muted">Related verses will appear here</p>
+            </div>
+          </section>
+
+          <!-- TODAY'S VERSE WIDGET -->
+          <section class="daily-verse reveal">
+            <h3>Today's Verse</h3>
+            <div id="daily-verse-card" class="verse-card">
+              <p class="muted">Loading today's verse...</p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- READING PROGRESS -->
+      <section class="reading-progress reveal">
+        <h3>Bible Reading Progress</h3>
+        <div class="progress-grid">
+          <div class="progress-item">
+            <h4>Old Testament</h4>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="progress-text">60%</p>
+          </div>
+          <div class="progress-item">
+            <h4>New Testament</h4>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="progress-text">85%</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS SECTION -->
+      <section class="bible-tools reveal">
+        <h3>Bible Study Tools</h3>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h4>📚 Reading Plans</h4>
+            <p>Coming soon: Structured Bible reading plans for spiritual growth.</p>
+          </div>
+          <div class="tool-card">
+            <h4>🎯 Topic Explorer</h4>
+            <p>Coming soon: Explore verses organized by topics like grace, faith, love, and more.</p>
+          </div>
+          <div class="tool-card">
+            <h4>📖 Commentaries</h4>
+            <p>Coming soon: In-depth commentary on key passages.</p>
+          </div>
+          <div class="tool-card">
+            <h4>🔗 Cross References</h4>
+            <p>Coming soon: Related passages referenced throughout Scripture.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Zion Gospel Ministry</h4>
+          <p>A Christ-centered church community proclaiming grace, truth, and hope.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bible-reader.html">Bible Study</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#" aria-label="Sermons">Sermons</a></li>
+            <li><a href="#" aria-label="Devotions">Devotions</a></li>
+            <li><a href="#" aria-label="Prayer Wall">Prayer Wall</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zion Gospel Ministry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "number": 1,
+    "name": "Genesis",
+    "testement": "Old Testament",
+    "author": "Moses",
+    "chapters": 50
+  },
+  {
+    "number": 2,
+    "name": "Exodus",
+    "testement": "Old Testament",
+    "author": "Moses",
+    "chapters": 40
+  },
+  {
+    "number": 19,
+    "name": "Psalms",
+    "testement": "Old Testament",
+    "author": "Various (David, Asaph, others)",
+    "chapters": 150
+  },
+  {
+    "number": 20,
+    "name": "Proverbs",
+    "testement": "Old Testament",
+    "author": "Solomon",
+    "chapters": 31
+  },
+  {
+    "number": 43,
+    "name": "John",
+    "testement": "New Testament",
+    "author": "Apostle John",
+    "chapters": 21
+  },
+  {
+    "number": 45,
+    "name": "Romans",
+    "testement": "New Testament",
+    "author": "Apostle Paul",
+    "chapters": 16
+  },
+  {
+    "number": 49,
+    "name": "Ephesians",
+    "testement": "New Testament",
+    "author": "Apostle Paul",
+    "chapters": 6
+  },
+  {
+    "number": 60,
+    "name": "1 Peter",
+    "testement": "New Testament",
+    "author": "Apostle Peter",
+    "chapters": 5
+  }
+]

@@ -1,0 +1,1051 @@
+/* ========================================
+   BIBLE READER STYLES
+   ======================================== */
+
+/* Hero Section */
+.bible-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 15%, var(--surface)),
+    color-mix(in srgb, var(--accent) 8%, var(--surface))
+  );
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.bible-header-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-strong);
+}
+
+.bible-header-content p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Search Section */
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.85rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  transition: 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.search-results {
+  display: grid;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-results.hidden {
+  display: none;
+}
+
+.search-result-item {
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.search-result-item:hover {
+  background: color-mix(in srgb, var(--primary) 8%, var(--surface));
+  border-color: var(--primary);
+}
+
+.search-result-ref {
+  font-weight: 600;
+  color: var(--primary-strong);
+  margin-bottom: 0.3rem;
+}
+
+.search-result-text {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Navigation & View Controls */
+.nav-controls {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Selectors */
+.nav-selectors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.nav-selectors label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.nav-selectors select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.nav-selectors select:hover,
+.nav-selectors select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.nav-selectors select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Combined book/chapter picker */
+#book-chapter-select {
+  grid-column: 1 / -1;
+}
+
+/* Unified translation dropdown — spans full width on its row */
+#translation-select {
+  grid-column: 1 / -1;
+  border-color: var(--accent);
+}
+
+#translation-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.btn-secondary {
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn-secondary:hover {
+  background: var(--primary-strong);
+}
+
+/* View Mode Radio Buttons */
+.view-modes {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.view-modes legend {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-btn input[type="radio"] {
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.radio-btn input[type="radio"]:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.radio-btn span {
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.radio-btn input[type="radio"]:checked + span {
+  background: color-mix(in srgb, var(--primary) 20%, var(--surface));
+  color: var(--primary-strong);
+  font-weight: 600;
+}
+
+/* Display Options Checkboxes */
+.display-options {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.display-options legend {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--primary);
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox input[type="checkbox"]:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.checkbox span {
+  font-size: 0.95rem;
+}
+
+/* Reader Layout */
+.reader-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+  }
+}
+
+.reader-main-full {
+  width: 100%;
+}
+
+/* Sidebar */
+.reader-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-section {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.sidebar-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--primary-strong);
+}
+
+.chapter-info {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.chapter-info dl {
+  margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.chapter-info dt {
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+.chapter-info dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.related-item {
+  padding: 0.8rem;
+  background: color-mix(in srgb, var(--primary) 5%, var(--surface));
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.related-item:hover {
+  background: color-mix(in srgb, var(--primary) 12%, var(--surface));
+}
+
+.related-item-title {
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.related-item-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.translation-key {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.translation-key dt {
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 0.5rem;
+}
+
+.translation-key dd {
+  margin: 0 0 0.8rem 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Main Reader Content */
+.reader-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.verse-display {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 400px;
+}
+
+.verse-display.reader-mode {
+  background: color-mix(in srgb, var(--bg) 50%, var(--surface) 50%);
+  padding: 3rem 2rem;
+}
+
+[data-theme="dark"] .verse-display.reader-mode {
+  background: #0f1419;
+}
+
+.verse-content {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* Verse Rendering */
+.verse-text {
+  margin: 1rem 0;
+  display: block;
+}
+
+/* Tamil verse text rendered below each English verse in chapter/single mode */
+.verse-text-ta {
+  margin-top: -0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.93em;
+  color: var(--muted);
+  border-left: 3px solid var(--accent-soft);
+  padding-left: 0.8rem;
+}
+
+.verse-number {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 0.9em;
+  margin-right: 0.4em;
+  vertical-align: super;
+}
+
+.verse-number.hidden {
+  display: none;
+}
+
+.verse-content-english,
+.verse-content-tamil {
+  margin-bottom: 1rem;
+}
+
+.verse-language-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Parallel View */
+.parallel-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .parallel-view {
+    grid-template-columns: 1fr;
+  }
+}
+
+.parallel-column {
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--surface-2), var(--surface) 70%);
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+/* Meditation Mode */
+.meditation-view {
+  text-align: center;
+  padding: 3rem 2rem;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 8%, var(--surface)),
+    color-mix(in srgb, var(--accent) 5%, var(--surface))
+  );
+  border-radius: 12px;
+}
+
+.meditation-view .verse-reference {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-strong);
+  margin-bottom: 2rem;
+}
+
+.meditation-view .verse-text {
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 3rem;
+  max-width: 700px;
+}
+
+.meditation-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Audio View */
+.audio-view {
+  text-align: center;
+  padding: 3rem;
+  background: color-mix(in srgb, var(--primary) 5%, var(--surface));
+  border-radius: 12px;
+  border: 2px solid var(--primary);
+}
+
+.audio-view h3 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btn-play,
+.btn-pause,
+.btn-stop {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.btn-play {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-play:hover {
+  background: var(--primary-strong);
+}
+
+.btn-pause,
+.btn-stop {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.btn-pause:hover,
+.btn-stop:hover {
+  background: color-mix(in srgb, var(--text) 10%, var(--surface-2));
+}
+
+.audio-progress {
+  max-width: 300px;
+  margin: 1.5rem auto;
+}
+
+.progress-bar-audio {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress-fill-audio {
+  height: 100%;
+  background: var(--primary);
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.audio-time {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+/* Background Music Controls */
+.background-music-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-toggle {
+  margin-bottom: 1.5rem;
+}
+
+.music-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text);
+  user-select: none;
+}
+
+.music-toggle input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.music-volume-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.music-volume-control label {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.volume-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+  background: var(--primary-strong);
+  transform: scale(1.2);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.volume-slider::-moz-range-thumb:hover {
+  background: var(--primary-strong);
+  transform: scale(1.2);
+}
+
+/* Placeholder */
+.placeholder {
+  text-align: center;
+  padding: 3rem;
+  color: var(--muted);
+}
+
+.placeholder p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Verse Actions */
+.verse-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--surface-2), var(--surface) 70%);
+  border-radius: 12px;
+}
+
+.btn-icon {
+  padding: 0.7rem 1.2rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text);
+}
+
+.btn-icon:hover {
+  border-color: var(--primary);
+  color: var(--primary-strong);
+  background: color-mix(in srgb, var(--primary) 8%, var(--surface));
+}
+
+.btn-icon:active {
+  transform: scale(0.98);
+}
+
+/* Navigation */
+.verse-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--surface-2), var(--surface) 70%);
+  border-radius: 12px;
+  gap: 1rem;
+}
+
+.btn-nav {
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+  flex: 1;
+  max-width: 150px;
+}
+
+.btn-nav:hover {
+  background: var(--primary-strong);
+}
+
+.btn-nav:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.current-ref {
+  font-weight: 600;
+  color: var(--primary-strong);
+  font-size: 1.05rem;
+}
+
+/* Related Verses Section */
+.related-verses {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.related-verses h3 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+/* Daily Verse Widget */
+.daily-verse {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 10%, var(--surface)),
+    color-mix(in srgb, var(--accent) 8%, var(--surface))
+  );
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.daily-verse h3 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+.verse-card {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.verse-card-reference {
+  font-weight: 700;
+  color: var(--primary-strong);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.verse-card-text {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Reading Progress */
+.reading-progress {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.reading-progress h3 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.progress-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.progress-bar {
+  height: 12px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-strong);
+  margin: 0;
+}
+
+/* Bible Tools Section */
+.bible-tools {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bible-tools h3 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--primary) 5%, var(--surface));
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.tool-card:hover {
+  background: color-mix(in srgb, var(--primary) 10%, var(--surface));
+  border-color: var(--primary-strong);
+}
+
+.tool-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: var(--primary-strong);
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  margin-top: 0;
+  color: var(--primary-strong);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-section a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: var(--primary-strong);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bible-header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-controls {
+    padding: 1rem;
+  }
+
+  .nav-grid {
+    gap: 1.5rem;
+  }
+
+  .verse-display {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .verse-content {
+    font-size: 1rem;
+  }
+
+  .verse-actions,
+  .verse-nav {
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+
+  .btn-icon {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-nav {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    max-width: none;
+  }
+
+  .meditation-view {
+    padding: 2rem 1rem;
+    min-height: 300px;
+  }
+
+  .meditation-view .verse-text {
+    font-size: 1.1rem;
+  }
+
+  .meditation-nav {
+    gap: 1rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav-controls,
+  .verse-actions,
+  .verse-nav,
+  .reader-sidebar,
+  .site-header,
+  .site-footer,
+  .bible-tools {
+    display: none;
+  }
+
+  .verse-display {
+    border: none;
+    padding: 0;
+    background: white;
+    color: black;
+  }
+
+  .verse-content {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
