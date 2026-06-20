@@ -296,6 +296,33 @@ main {
   margin-bottom: 0.45rem;
 }
 
+.service-info {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.service-item {
+  border: 1px solid color-mix(in srgb, var(--primary) 18%, var(--border));
+  background: color-mix(in srgb, var(--surface-2) 62%, var(--surface));
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+}
+
+.service-item h4 {
+  margin: 0 0 0.35rem;
+  color: var(--primary-strong);
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+.service-subline {
+  margin: 0.12rem 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
 .timeline {
   display: grid;
   gap: 0.9rem;
