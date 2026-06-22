@@ -21,6 +21,7 @@
   {"name":"Proverbs","slug":"proverbs","file":"Proverbs.json","testament":"ot","chapters":31},
   {"name":"Ecclesiastes","slug":"ecclesiastes","file":"Ecclesiastes.json","testament":"ot","chapters":12},
   {"name":"Song of Solomon","slug":"song-of-solomon","file":"SongofSolomon.json","testament":"ot","chapters":8},
+
   {"name":"Isaiah","slug":"isaiah","file":"Isaiah.json","testament":"ot","chapters":66},
   {"name":"Jeremiah","slug":"jeremiah","file":"Jeremiah.json","testament":"ot","chapters":52},
   {"name":"Lamentations","slug":"lamentations","file":"Lamentations.json","testament":"ot","chapters":5},

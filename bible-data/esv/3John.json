@@ -1,0 +1,12 @@
+{
+  "book": "3 John",
+  "translation": "esv",
+  "status": "placeholder",
+  "note": "Text not bundled in this repo. Add licensed/public-domain text for this translation.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": []
+    }
+  ]
+}

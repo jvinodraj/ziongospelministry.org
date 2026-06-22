@@ -1,0 +1,64 @@
+{
+  "book": "Zechariah",
+  "translation": "niv",
+  "status": "placeholder",
+  "note": "Text not bundled in this repo. Add licensed/public-domain text for this translation.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": []
+    },
+    {
+      "chapter": 2,
+      "verses": []
+    },
+    {
+      "chapter": 3,
+      "verses": []
+    },
+    {
+      "chapter": 4,
+      "verses": []
+    },
+    {
+      "chapter": 5,
+      "verses": []
+    },
+    {
+      "chapter": 6,
+      "verses": []
+    },
+    {
+      "chapter": 7,
+      "verses": []
+    },
+    {
+      "chapter": 8,
+      "verses": []
+    },
+    {
+      "chapter": 9,
+      "verses": []
+    },
+    {
+      "chapter": 10,
+      "verses": []
+    },
+    {
+      "chapter": 11,
+      "verses": []
+    },
+    {
+      "chapter": 12,
+      "verses": []
+    },
+    {
+      "chapter": 13,
+      "verses": []
+    },
+    {
+      "chapter": 14,
+      "verses": []
+    }
+  ]
+}

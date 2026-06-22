@@ -14,6 +14,7 @@
   /* ============================================================
    * Constants
    * ============================================================ */
+  // Translations with full per-book JSON data available under bible-data/{value}/
   const EN_TRANSLATIONS = [
     { value: "kjv",  label: "KJV  — King James Version",           full: true  },
     { value: "nkjv", label: "NKJV — New King James Version",        full: false },
@@ -22,10 +23,13 @@
   ];
 
   const TA_TRANSLATIONS = [
-    { value: "pv",   label: "PV — பரிசுத்த வேதாகமம்" }
+    { value: "pv", label: "PV — பரிசுத்த வேதாகமம் (Tamil OV)" }
   ];
 
   const ALL_TRANSLATIONS = EN_TRANSLATIONS.concat(TA_TRANSLATIONS);
+
+  // Translations whose per-book files are currently just placeholder stubs
+  const STUB_TRANSLATIONS = new Set(["nkjv", "niv", "esv"]);
 
   /* ============================================================
    * App State
@@ -209,26 +213,113 @@
    * Helper: Toast notifications
    * ============================================================ */
   function toast(msg, color) {
-    // Simple toast notification
-    console.log(msg);
+    var existing = document.getElementById("_zgm-toast");
+    if (existing) existing.remove();
+    var t = document.createElement("div");
+    t.id = "_zgm-toast";
+    t.textContent = msg;
+    t.style.cssText = [
+      "position:fixed", "bottom:1.5rem", "right:1.5rem", "z-index:9999",
+      "background:" + (color || "#2e7d32"), "color:#fff",
+      "padding:0.7rem 1.2rem", "border-radius:8px",
+      "font-size:0.9rem", "box-shadow:0 4px 14px rgba(0,0,0,0.25)",
+      "opacity:0", "transition:opacity 0.2s"
+    ].join(";");
+    document.body.appendChild(t);
+    requestAnimationFrame(function () { t.style.opacity = "1"; });
+    setTimeout(function () {
+      t.style.opacity = "0";
+      setTimeout(function () { t.remove(); }, 200);
+    }, 2800);
+  }
+
+  async function tryFetchJson(paths) {
+    for (var i = 0; i < paths.length; i++) {
+      try {
+        var res = await fetch(paths[i]);
+        if (!res.ok) continue;
+        var data = await res.json();
+        return data;
+      } catch (_) {
+        // Continue trying remaining paths.
+      }
+    }
+    return null;
+  }
+
+  function bookNameToFile(bookName) {
+    return String(bookName || "").replace(/\s+/g, "") + ".json";
+  }
+
+  function setBooks(list) {
+    state.books = Array.isArray(list) ? list : [];
+    state.booksMap = {};
+    state.books.forEach(function (book) {
+      if (book && book.name) state.booksMap[book.name] = book;
+    });
+  }
+
+  async function buildBooksFromNames(bookNames) {
+    var out = [];
+    for (var i = 0; i < bookNames.length; i++) {
+      var name = String(bookNames[i] || "").trim();
+      if (!name) continue;
+
+      var file = bookNameToFile(name);
+      var chapterCount = 1;
+      var raw = await tryFetchJson([
+        "bible-data/kjv/" + file,
+        "./bible-data/kjv/" + file,
+        "/bible-data/kjv/" + file
+      ]);
+
+      if (raw && Array.isArray(raw.chapters) && raw.chapters.length) {
+        chapterCount = raw.chapters.length;
+      }
+
+      out.push({
+        name: name,
+        slug: name.toLowerCase().replace(/\s+/g, "-"),
+        file: file,
+        testament: i < 39 ? "ot" : "nt",
+        chapters: chapterCount
+      });
+    }
+    return out;
   }
 
   async function loadBooks() {
-    try {
-      const res = await fetch("assets/data/bible-books.json");
-      if (!res.ok) throw new Error("books list not found");
-      const list = await res.json();
-      state.books = list;
-      list.forEach(function (book) {
-        state.booksMap[book.name] = book;
-      });
-    } catch (_) {
-      const sample = (window.SAMPLE_BIBLE_DATA || {}).books || [];
-      state.books = sample;
-      sample.forEach(function (book) {
-        state.booksMap[book.name] = book;
-      });
+    var list = await tryFetchJson([
+      "assets/data/bible-books.json",
+      "./assets/data/bible-books.json",
+      "/assets/data/bible-books.json"
+    ]);
+
+    if (Array.isArray(list) && list.length && list[0] && list[0].name) {
+      setBooks(list);
+      return;
     }
+
+    var names = await tryFetchJson([
+      "bible-data/Books.json",
+      "./bible-data/Books.json",
+      "/bible-data/Books.json"
+    ]);
+
+    if (Array.isArray(names) && names.length) {
+      var rebuilt = await buildBooksFromNames(names);
+      setBooks(rebuilt);
+      return;
+    }
+
+    var sample = (window.SAMPLE_BIBLE_DATA || {}).books || [];
+    if (Array.isArray(sample) && sample.length) {
+      setBooks(sample);
+      return;
+    }
+
+    setBooks([]);
+    toast("Unable to load Bible books. Please refresh.", "#e53935");
   }
 
   function syncTileActive(gridId, value) {
@@ -329,41 +420,32 @@
     var cacheKey = bookName + "|" + chapter + "|" + translationKey;
     if (state.chapterCache[cacheKey]) return state.chapterCache[cacheKey];
 
-    var sample = (window.SAMPLE_BIBLE_DATA || {}).translations || {};
+    var bookMeta = state.booksMap[bookName];
+    if (!bookMeta) return null;
 
-    if (translationKey === "kjv") {
-      var bookMeta = state.booksMap[bookName];
-      if (bookMeta) {
-        try {
-          var res = await fetch("bible-data/" + bookMeta.file);
-          if (res.ok) {
-            var raw = await res.json();
-            var data = extractChapter(raw, bookName, chapter);
-            if (data && Object.keys(data).length) {
-              state.chapterCache[cacheKey] = data;
-              return data;
-            }
-          }
-        } catch (_) { }
+    // All translations now live at bible-data/{translationKey}/{Book}.json
+    // NKJV / NIV / ESV files are stubs (chapters:[]) until full data is added
+    if (STUB_TRANSLATIONS.has(translationKey)) {
+      return null; // stubs have no verse content yet
+    }
+
+    var filePath = "bible-data/" + translationKey + "/" + bookMeta.file;
+    try {
+      var res = await fetch(filePath);
+      if (!res.ok) return null;
+      var raw = await res.json();
+
+      // Stub check: placeholder files have no chapters
+      if (raw && raw.status === "placeholder") return null;
+
+      var data = extractChapter(raw, bookName, chapter);
+      if (data && Object.keys(data).length) {
+        state.chapterCache[cacheKey] = data;
+        return data;
       }
-    }
-
-    var translationData = sample[translationKey] || {};
-    var bookData = translationData[bookName] || {};
-    var chData = bookData[String(chapter)] || null;
-
-    if (chData) {
-      state.chapterCache[cacheKey] = chData;
-      return chData;
-    }
+    } catch (_) {}
 
     return null;
-  }
-
-  function setCombinedSelection(bookName, chapter) {
-    const sel = q("book-chapter-select");
-    if (!sel || !bookName || !chapter) return;
-    sel.value = bookName + "|" + chapter;
   }
 
   /* ============================================================
@@ -1067,13 +1149,30 @@
    * Bootstrap
    * ============================================================ */
   async function init() {
-    const sampleData = window.SAMPLE_BIBLE_DATA || {};
-    state.sermons = sampleData.sermons || [];
-    state.verses  = sampleData.verses  || [];
-
     await loadBooks();
 
-    const translationSel = q("translation-select");
+    // Load sermons for the related-content panel
+    try {
+      var sermonsRes = await fetch("assets/data/sermons.json");
+      if (sermonsRes.ok) state.sermons = await sermonsRes.json();
+    } catch (_) {}
+
+    // Build daily-verse pool from devotions
+    try {
+      var devRes = await fetch("assets/data/devotions.json");
+      if (devRes.ok) {
+        var devotions = await devRes.json();
+        state.verses = Array.isArray(devotions)
+          ? devotions.map(function (d) {
+              return { reference: d.scripture || d.reference || "", text: d.reflection || d.text || "" };
+            })
+          : [];
+      }
+    } catch (_) {}
+
+    state.tamilData = null; // Loaded lazily on first Tamil PV request
+
+    var translationSel = q("translation-select");
     if (translationSel) translationSel.value = state.primaryTranslation;
 
     populateBookSelect();
@@ -1081,8 +1180,7 @@
     renderDailyVerse();
     updateRelatedSermons();
 
-    // Populate related sermons placeholder with default text
-    const rSermons = q("related-sermons");
+    var rSermons = q("related-sermons");
     if (rSermons) rSermons.innerHTML = '<p class="muted">Select a passage to see related sermons.</p>';
   }
 

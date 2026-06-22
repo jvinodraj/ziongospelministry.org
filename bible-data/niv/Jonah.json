@@ -1,0 +1,24 @@
+{
+  "book": "Jonah",
+  "translation": "niv",
+  "status": "placeholder",
+  "note": "Text not bundled in this repo. Add licensed/public-domain text for this translation.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": []
+    },
+    {
+      "chapter": 2,
+      "verses": []
+    },
+    {
+      "chapter": 3,
+      "verses": []
+    },
+    {
+      "chapter": 4,
+      "verses": []
+    }
+  ]
+}
